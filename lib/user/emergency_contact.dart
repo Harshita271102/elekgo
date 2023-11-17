@@ -1,24 +1,24 @@
 import 'package:elekgo/color.dart';
-import 'package:flutter/cupertino.dart';
+// import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class Emergency_contact extends StatefulWidget {
-  const Emergency_contact({Key? key}) : super(key: key);
+class EmergencyContact extends StatefulWidget {
+  const EmergencyContact({Key? key}) : super(key: key);
 
   @override
-  State<Emergency_contact> createState() => _Emergency_contactState();
+  State<EmergencyContact> createState() => _EmergencyContactState();
 }
 
-class _Emergency_contactState extends State<Emergency_contact> {
+class _EmergencyContactState extends State<EmergencyContact> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start, // Align children to the top
         children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 82.0), // Adjust the top padding as needed
+          const Padding(
+            padding: EdgeInsets.only(top: 82.0), // Adjust the top padding as needed
             child: Center(
               child: Text(
                 'Emergency Contact',

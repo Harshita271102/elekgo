@@ -1,18 +1,18 @@
 import 'package:elekgo/color.dart';
-import 'package:elekgo/user/book_ride.dart';
-import 'package:flutter/cupertino.dart';
+// import 'package:elekgo/user/book_ride.dart';
+// import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'location_page.dart';
 
-class Name_gender extends StatefulWidget {
-  const Name_gender({Key? key}) : super(key: key);
+class NameGender extends StatefulWidget {
+  const NameGender({Key? key}) : super(key: key);
 
   @override
-  State<Name_gender> createState() => _Name_genderState();
+  State<NameGender> createState() => _NameGenderState();
 }
 
-class _Name_genderState extends State<Name_gender> {
+class _NameGenderState extends State<NameGender> {
   TextEditingController nameController = TextEditingController();
   String dropdownValue = 'Gender';
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
@@ -58,7 +58,7 @@ class _Name_genderState extends State<Name_gender> {
                   width: double.infinity,
                   // Use full width
                   height: 55,
-                  padding: EdgeInsets.symmetric(horizontal: 12),
+                  padding: const EdgeInsets.symmetric(horizontal: 12),
                   // Symmetric padding
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.grey),
@@ -92,7 +92,7 @@ class _Name_genderState extends State<Name_gender> {
                   width: double.infinity,
                   // Use full width
                   height: 55,
-                  padding: EdgeInsets.symmetric(horizontal: 16),
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
                   // Symmetric padding
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.grey),
@@ -156,30 +156,30 @@ class _Name_genderState extends State<Name_gender> {
                       if (_formKey.currentState!.validate()) {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => LocationPage()),
+                          MaterialPageRoute(builder: (context) => const LocationPage()),
                         );
 
 
                       }
                     },
+                    style: ButtonStyle(
+                      backgroundColor:
+                          MaterialStateProperty.all<Color>(background),
+                      padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
+                        const EdgeInsets.only(top: 17, bottom: 16),
+                      ),
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                    ),
                     child: Text(
                       "Let’s Go!",
                       style: TextStyle(
                         color: white,
                         fontSize: 20,
                         fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                    style: ButtonStyle(
-                      backgroundColor:
-                          MaterialStateProperty.all<Color>(background),
-                      padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
-                        EdgeInsets.only(top: 17, bottom: 16),
-                      ),
-                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                        RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
                       ),
                     ),
                   ),

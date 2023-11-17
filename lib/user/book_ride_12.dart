@@ -1,17 +1,17 @@
 import 'package:elekgo/user/payment_page.dart';
-import 'package:flutter/cupertino.dart';
+// import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../color.dart';
 
-class Book_ride_12 extends StatefulWidget {
-  const Book_ride_12({super.key});
+class BookRide12 extends StatefulWidget {
+  const BookRide12({super.key});
 
   @override
-  State<Book_ride_12> createState() => _Book_ride_12State();
+  State<BookRide12> createState() => _BookRide12State();
 }
 
-class _Book_ride_12State extends State<Book_ride_12> {
+class _BookRide12State extends State<BookRide12> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,83 +20,74 @@ class _Book_ride_12State extends State<Book_ride_12> {
           children: [
             Stack(
               children: [
-                Container(
-                  child: Image.asset('assets/images/image 4.png'), // Background image
-                ),
+                Image.asset('assets/images/image 4.png'),
               ],
             ),
 
 
-            Container(
+            Row(
+              children: [
+                Expanded(
+                  child:
+                  Container(
+                    height: 55,
+                    width: 133,
+                    margin: const EdgeInsets.only(left: 20, right: 20, top: 25),
 
-              child: Row(
-                children: [
-                  Expanded(
-                    child:
-                    Container(
-                      height: 55,
-                      width: 133,
-                      margin: const EdgeInsets.only(left: 20, right: 20, top: 25),
-
-                      child: ElevatedButton(
-                        onPressed: () {
-                          // Handle button press
-                        },
-                        child: Text(
-                          "PIN - 1234",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
-                          ),
+                    child: ElevatedButton(
+                      onPressed: () {
+                        // Handle button press
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: background,
+                        padding: const EdgeInsets.only(top: 17, bottom: 16),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
                         ),
-                        style: ElevatedButton.styleFrom(
-                          primary: background,
-                          padding: EdgeInsets.only(top: 17, bottom: 16),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
+                      ),
+                      child: const Text(
+                        "PIN - 1234",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
                         ),
                       ),
                     ),
                   ),
+                ),
 
-                  Expanded(
-                    child:
-                    Container(
-                      height: 55,
-                      width: 133,
+                Expanded(
+                  child:
+                  Container(
+                    height: 55,
+                    width: 133,
 
 
-                      margin: const EdgeInsets.only(left: 20, right: 20, top: 25),
-                      child: ElevatedButton(
-                        onPressed: () {
-                          // Handle button press for the third container
-                        },
-                        child: Text(
-                          "Arriving in",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
-                          ),
+                    margin: const EdgeInsets.only(left: 20, right: 20, top: 25),
+                    child: ElevatedButton(
+                      onPressed: () {
+                        // Handle button press for the third container
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: background, // You should define 'background'
+                        padding: const EdgeInsets.only(top: 17, bottom: 16),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
                         ),
-                        style: ElevatedButton.styleFrom(
-                          primary: background, // You should define 'background'
-                          padding: EdgeInsets.only(top: 17, bottom: 16),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
+                      ),
+                      child: const Text(
+                        "Arriving in",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
                         ),
                       ),
                     ),
                   ),
-                ],
-              ),
-
-
-
-
+                ),
+              ],
             ),
             Column(
               children: [
@@ -107,8 +98,8 @@ class _Book_ride_12State extends State<Book_ride_12> {
                       // Handle button press for the button
                     },
                     style: ElevatedButton.styleFrom(
-                      primary: background, // You should define 'background'
-                      padding: EdgeInsets.only(top: 17, bottom: 16),
+                      backgroundColor: background, // You should define 'background'
+                      padding: const EdgeInsets.only(top: 17, bottom: 16),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -156,7 +147,7 @@ class _Book_ride_12State extends State<Book_ride_12> {
                                   ),
 
                              IconButton(
-                                icon: Icon(
+                                icon: const Icon(
                                   Icons.star,
                                   color: Colors.yellow, // Set the desired icon color
                                 ),
@@ -169,7 +160,7 @@ class _Book_ride_12State extends State<Book_ride_12> {
                             ],
                           ),
                         ),
-                        Spacer(), // Adds a flexible space between the columns
+                        const Spacer(), // Adds a flexible space between the columns
                         Padding(
                           padding: const EdgeInsets.only(right: 10),
                           child: Column(
@@ -214,22 +205,22 @@ class _Book_ride_12State extends State<Book_ride_12> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Payment_page()),
+                      MaterialPageRoute(builder: (context) => const PaymentPage()),
                     );
                   },
-                  child: Text(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: background, // You should define 'background'
+                    padding: const EdgeInsets.only(top: 17, bottom: 16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  child: const Text(
                     "Cencle",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                  style: ElevatedButton.styleFrom(
-                    primary: background, // You should define 'background'
-                    padding: EdgeInsets.only(top: 17, bottom: 16),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
                 ),

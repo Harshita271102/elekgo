@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+// import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../color.dart';
@@ -25,17 +25,17 @@ class _NewState extends State<New> {
               padding: EdgeInsets.zero,
               children: [
                 DrawerHeader(
-                  padding: EdgeInsets.all(0.0),
+                  padding: const EdgeInsets.all(0.0),
                   decoration: BoxDecoration(
                     color: babypink,
                     border: null,
                   ),
                   child: Container(
                     width: MediaQuery.of(context).size.width,
-                    padding: EdgeInsets.only(top: 45),
+                    padding: const EdgeInsets.only(top: 45),
                     decoration: BoxDecoration(
                       color: background,
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(12),
                         bottomRight: Radius.circular(12),
                       ),
@@ -95,7 +95,7 @@ class _NewState extends State<New> {
 
                           ),
 
-                          Spacer(), // Add Spacer to push the next section to the right
+                          const Spacer(), // Add Spacer to push the next section to the right
                           Padding(
                             padding: const EdgeInsets.only(bottom: 50,right: 20),
                             child: Container(
@@ -135,7 +135,7 @@ class _NewState extends State<New> {
                     child: Container(
                       color: litegreen, // Circular background color
                       child: IconButton(
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.access_time,
                           color: Colors.red, // Set the desired icon color
                         ),
@@ -146,9 +146,9 @@ class _NewState extends State<New> {
                     ),
                   ),
 
-                  title: Padding(
-                    padding: const EdgeInsets.only(left: 8),
-                    child: const Text('My Ride',
+                  title: const Padding(
+                    padding: EdgeInsets.only(left: 8),
+                    child: Text('My Ride',
                       style: TextStyle(
                         fontSize: 13,
                         fontWeight: FontWeight.w500,
@@ -158,7 +158,7 @@ class _NewState extends State<New> {
                   ),
                   trailing: IconButton(
                     color: gree,
-                    icon: Icon(Icons.arrow_forward_ios),
+                    icon: const Icon(Icons.arrow_forward_ios),
                     onPressed: () {
                       // Navigator.push(
                       //   context,
@@ -180,7 +180,7 @@ class _NewState extends State<New> {
                     child: Container(
                       color: litegreen, // Circular background color
                       child: IconButton(
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.access_time,
                           color: Colors.red, // Set the desired icon color
                         ),
@@ -191,9 +191,9 @@ class _NewState extends State<New> {
                     ),
                   ),
 
-                  title: Padding(
-                    padding: const EdgeInsets.only(left: 8),
-                    child: const Text('Referral Code',
+                  title: const Padding(
+                    padding: EdgeInsets.only(left: 8),
+                    child: Text('Referral Code',
                       style: TextStyle(
                         fontSize: 13,
                         fontWeight: FontWeight.w500,
@@ -203,7 +203,7 @@ class _NewState extends State<New> {
                   ),
                   trailing: IconButton(
                     color: gree,
-                    icon: Icon(Icons.arrow_forward_ios),
+                    icon: const Icon(Icons.arrow_forward_ios),
                     onPressed: () {
                       // Navigator.push(
                       //   context,
@@ -223,7 +223,7 @@ class _NewState extends State<New> {
                     child: Container(
                       color: litegreen, // Circular background color
                       child: IconButton(
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.access_time,
                           color: Colors.red, // Set the desired icon color
                         ),
@@ -234,9 +234,9 @@ class _NewState extends State<New> {
                     ),
                   ),
 
-                  title: Padding(
-                    padding: const EdgeInsets.only(left: 8),
-                    child: const Text(
+                  title: const Padding(
+                    padding: EdgeInsets.only(left: 8),
+                    child: Text(
                       'Share App',
                       style: TextStyle(
                         fontSize: 13,
@@ -247,7 +247,7 @@ class _NewState extends State<New> {
                   ),
                   trailing: IconButton(
                     color: gree,
-                    icon: Icon(Icons.arrow_forward_ios),
+                    icon: const Icon(Icons.arrow_forward_ios),
                     onPressed: () {
                       // Navigator.push(
                       //   context,
@@ -264,7 +264,7 @@ class _NewState extends State<New> {
                     child: Container(
                       color: litegreen, // Circular background color
                       child: IconButton(
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.access_time,
                           color: Colors.red, // Set the desired icon color
                         ),
@@ -274,9 +274,9 @@ class _NewState extends State<New> {
                       ),
                     ),
                   ),
-                  title: Padding(
-                    padding: const EdgeInsets.only(left: 8),
-                    child: const Text(
+                  title: const Padding(
+                    padding: EdgeInsets.only(left: 8),
+                    child: Text(
                       'Emergency Contact ',
                       style: TextStyle(
                         fontSize: 13,
@@ -287,7 +287,7 @@ class _NewState extends State<New> {
                   ),
                   trailing: IconButton(
                     color: gree,
-                    icon: Icon(Icons.arrow_forward_ios),
+                    icon: const Icon(Icons.arrow_forward_ios),
                     onPressed: () {
                       // Navigator.push(
                       //   context,
@@ -303,7 +303,7 @@ class _NewState extends State<New> {
                     child: Container(
                       color: litegreen, // Circular background color
                       child: IconButton(
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.access_time,
                           color: Colors.red, // Set the desired icon color
                         ),
@@ -314,9 +314,9 @@ class _NewState extends State<New> {
                     ),
                   ),
 
-                  title: Padding(
-                    padding: const EdgeInsets.only(left: 8),
-                    child: const Text(
+                  title: const Padding(
+                    padding: EdgeInsets.only(left: 8),
+                    child: Text(
                       'FAQs ',
                       style: TextStyle(
                         fontSize: 13,
@@ -327,7 +327,7 @@ class _NewState extends State<New> {
                   ),
                   trailing: IconButton(
                     color: gree,
-                    icon: Icon(Icons.arrow_forward_ios),
+                    icon: const Icon(Icons.arrow_forward_ios),
                     onPressed: () {
                       // Navigator.push(
                       //   context,
@@ -344,7 +344,7 @@ class _NewState extends State<New> {
                     child: Container(
                       color: litegreen, // Circular background color
                       child: IconButton(
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.access_time,
                           color: Colors.red, // Set the desired icon color
                         ),
@@ -355,9 +355,9 @@ class _NewState extends State<New> {
                     ),
                   ),
 
-                  title: Padding(
-                    padding: const EdgeInsets.only(left: 8),
-                    child: const Text('About',
+                  title: const Padding(
+                    padding: EdgeInsets.only(left: 8),
+                    child: Text('About',
                       style: TextStyle(
                         fontSize: 13,
                         fontWeight: FontWeight.w500,
@@ -367,7 +367,7 @@ class _NewState extends State<New> {
                   ),
                   trailing: IconButton(
                     color: gree,
-                    icon: Icon(Icons.arrow_forward_ios),
+                    icon: const Icon(Icons.arrow_forward_ios),
                     onPressed: () {
                       // Navigator.push(
                       //   context,
@@ -389,7 +389,7 @@ class _NewState extends State<New> {
                     child: Container(
                       color: litegreen, // Circular background color
                       child: IconButton(
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.access_time,
                           color: Colors.red, // Set the desired icon color
                         ),
@@ -400,9 +400,9 @@ class _NewState extends State<New> {
                     ),
                   ),
 
-                  title: Padding(
-                    padding: const EdgeInsets.only(left: 8),
-                    child: const Text(
+                  title: const Padding(
+                    padding: EdgeInsets.only(left: 8),
+                    child: Text(
                       'Logout',
                       style: TextStyle(
                         fontSize: 13,
@@ -413,7 +413,7 @@ class _NewState extends State<New> {
                   ),
                   trailing: IconButton(
                     color: gree,
-                    icon: Icon(Icons.arrow_forward_ios),
+                    icon: const Icon(Icons.arrow_forward_ios),
                     onPressed: () {
                       // Handle search button press
                     },
@@ -563,7 +563,7 @@ class _NewState extends State<New> {
                   _scaffoldKey.currentState!.openDrawer();
                 }
               },
-              child: Text("Open/Close Drawer"),
+              child: const Text("Open/Close Drawer"),
 
 
         ),

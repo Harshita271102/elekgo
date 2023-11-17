@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+// import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../color.dart';
@@ -19,8 +19,8 @@ class _WalletState extends State<Wallet> {
       body:ListView(
         children: [
           Container(
-            margin: EdgeInsets.only(top: 25),
-            padding: EdgeInsets.only(left: 20, right: 20, bottom: 30),
+            margin: const EdgeInsets.only(top: 25),
+            padding: const EdgeInsets.only(left: 20, right: 20, bottom: 30),
             child: Row(
 
 
@@ -34,10 +34,10 @@ class _WalletState extends State<Wallet> {
                           onPressed: () {
                             Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => Book_ride()),
+                              MaterialPageRoute(builder: (context) => const BookRide()),
                             );
                           },
-                          icon: Icon(Icons.arrow_back),
+                          icon: const Icon(Icons.arrow_back),
                           color: white,
                           highlightColor: Colors.transparent,
                         ),
@@ -127,7 +127,7 @@ class _WalletState extends State<Wallet> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
+                    const Row(
                       children: [
                         Text(
                           'Send Money',
@@ -197,7 +197,7 @@ class _WalletState extends State<Wallet> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
+                    const Row(
                       children: [
                         Text(
                           'Send Money',

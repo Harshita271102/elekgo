@@ -1,5 +1,5 @@
 import 'package:elekgo/user/book_ride_10.dart';
-import 'package:elekgo/user/wallet.dart';
+// import 'package:elekgo/user/wallet.dart';
 import 'package:flutter/material.dart';
 
 import '../color.dart';
@@ -20,20 +20,18 @@ class _BookRide9State extends State<BookRide9> {
           children: [
             Stack(
               children: [
-                Container(
-                  child: Image.asset('assets/images/image 4.png'), // Background image
-                ),
+                Image.asset('assets/images/image 4.png'),
                 Positioned(
                   top: 20,
                   left: 20,
                   right: 20,
                   child: Container(
-                    padding: EdgeInsets.symmetric(horizontal: 10),
+                    padding: const EdgeInsets.symmetric(horizontal: 10),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    child: TextField(
+                    child: const TextField(
                       decoration: InputDecoration(
                         hintText: 'Search drop location',
                         border: InputBorder.none,
@@ -53,21 +51,18 @@ class _BookRide9State extends State<BookRide9> {
               padding: const EdgeInsets.only(top: 30),
               child: ListTile(
                 leading: ClipOval(
-                  child: Container(
-                    // Circular background color
-                    child: IconButton(
-                      icon: Icon(
-                        Icons.location_pin,
-                        color: Colors.green, // Set the desired icon color
-                      ),
-                      onPressed: () {
-                        // Handle menu button press
-                      },
+                  child: IconButton(
+                    icon: const Icon(
+                      Icons.location_pin,
+                      color: Colors.green, // Set the desired icon color
                     ),
+                    onPressed: () {
+                      // Handle menu button press
+                    },
                   ),
                 ),
-                title: Padding(
-                  padding: const EdgeInsets.only(left: 8),
+                title: const Padding(
+                  padding: EdgeInsets.only(left: 8),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -105,22 +100,22 @@ class _BookRide9State extends State<BookRide9> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Book_ride_10()),
+                      MaterialPageRoute(builder: (context) => const BookRide10()),
                     );
                   },
-                  child: Text(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: background, // You should define 'background'
+                    padding: const EdgeInsets.only(top: 17, bottom: 16),
+                    shape: RoundedRectangleBorder(  
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  child: const Text(
                     "Confirm Pickup",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                  style: ElevatedButton.styleFrom(
-                    primary: background, // You should define 'background'
-                    padding: EdgeInsets.only(top: 17, bottom: 16),
-                    shape: RoundedRectangleBorder(  
-                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
                 ),

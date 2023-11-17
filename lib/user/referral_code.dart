@@ -1,25 +1,25 @@
 import 'package:elekgo/color.dart';
 import 'package:elekgo/user/book_ride.dart';
-import 'package:flutter/cupertino.dart';
+// import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Referral_code extends StatefulWidget {
-  const Referral_code({Key? key}) : super(key: key);
+class ReferralCode extends StatefulWidget {
+  const ReferralCode({Key? key}) : super(key: key);
 
 
   @override
-  State<Referral_code> createState() => _Referral_codeState();
+  State<ReferralCode> createState() => _ReferralCodeState();
 }
 
-class _Referral_codeState extends State<Referral_code> {
+class _ReferralCodeState extends State<ReferralCode> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
       body:ListView(
         children: [
           Container(
-            margin: EdgeInsets.only(top: 25),
-            padding: EdgeInsets.only(left: 20, right: 20, bottom: 30),
+            margin: const EdgeInsets.only(top: 25),
+            padding: const EdgeInsets.only(left: 20, right: 20, bottom: 30),
             child: Row(
               children: [
                 Container(
@@ -31,10 +31,10 @@ class _Referral_codeState extends State<Referral_code> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => Book_ride()),
+                        MaterialPageRoute(builder: (context) => const BookRide()),
                       );
                     },
-                    icon: Icon(Icons.arrow_back),
+                    icon: const Icon(Icons.arrow_back),
                     color: white,
                     highlightColor: Colors.transparent,
                   ),
@@ -61,7 +61,7 @@ class _Referral_codeState extends State<Referral_code> {
               height: 200, // Adjust the height as needed
             ),
           ),
-          SizedBox(height: 50),
+          const SizedBox(height: 50),
           Center(
             child: Text(
               'Referral Code',
@@ -72,7 +72,7 @@ class _Referral_codeState extends State<Referral_code> {
               ),
             ),
           ),
-          SizedBox(height: 30),
+          const SizedBox(height: 30),
 
           Center(
             child: Text(
@@ -94,7 +94,7 @@ class _Referral_codeState extends State<Referral_code> {
               ),
             ),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
 
           Padding(
             padding: const EdgeInsets.only(left: 60),
@@ -109,7 +109,7 @@ class _Referral_codeState extends State<Referral_code> {
               ),
             ),
           ),
-          SizedBox(height: 50),
+          const SizedBox(height: 50),
           Container(
             margin: const EdgeInsets.only(left: 20, right: 20),
             child: SizedBox(
@@ -122,19 +122,19 @@ class _Referral_codeState extends State<Referral_code> {
                   //   ),
                   // );
                 },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: background,
+                  padding: const EdgeInsets.only(top: 17, bottom: 16),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                ),
                 child: Text(
                   "Submit",
                   style: TextStyle(
                     color: white,
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
-                  ),
-                ),
-                style: ElevatedButton.styleFrom(
-                  primary: background,
-                  padding: EdgeInsets.only(top: 17, bottom: 16),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
                   ),
                 ),
               ),

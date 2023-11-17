@@ -22,19 +22,19 @@ class _Main1State extends State<Main1> with TickerProviderStateMixin {
     super.initState();
 
     _controller = AnimationController(
-      duration: Duration(seconds: 2), // Animation duration
+      duration: const Duration(seconds: 2), // Animation duration
       vsync: this,
     );
 
     _animation = Tween<Offset>(
-      begin: Offset(0, 9), // Slide from the bottom
-      end: Offset(0, 0), // Slide to the top
+      begin: const Offset(0, 9), // Slide from the bottom
+      end: const Offset(0, 0), // Slide to the top
     ).animate(_controller!);
 
     _controller!.forward();
 
     // Trigger the zoom-out animation after a delay (e.g., 2 seconds)
-    Future.delayed(Duration(seconds: 2), () {
+    Future.delayed(const Duration(seconds: 2), () {
       setState(() {
         imageWidth = 200.0; // Adjust the final width after zoom
         imageHeight = 200.0; // Adjust the final height after zoom
@@ -46,12 +46,12 @@ class _Main1State extends State<Main1> with TickerProviderStateMixin {
   }
 
   void navigateToHomePage() async {
-    await Future.delayed(Duration(milliseconds: 4000));
+    await Future.delayed(const Duration(milliseconds: 4000));
 
     // Navigate to the next page here
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (context) => Second_page()),
+      MaterialPageRoute(builder: (context) => const SecondPage()),
     );
   }
 
@@ -70,7 +70,7 @@ class _Main1State extends State<Main1> with TickerProviderStateMixin {
                     top: 230, left: 62, right: 62, bottom: 40),
                 child: Center(
                   child: AnimatedContainer(
-                    duration: Duration(seconds: 1), // Duration of the animation
+                    duration: const Duration(seconds: 1), // Duration of the animation
                     width: imageWidth,
                     height: imageHeight,
                     child: Image.asset('assets/images/Group 4534296.png'),

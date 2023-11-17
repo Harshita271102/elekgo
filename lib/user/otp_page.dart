@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 
 import '../color.dart';
 
-class Otp_Page extends StatefulWidget {
-  const Otp_Page({Key? key}) : super(key: key);
+class OtpPage extends StatefulWidget {
+  const OtpPage({Key? key}) : super(key: key);
 
   @override
-  State<Otp_Page> createState() => _Otp_PageState();
+  State<OtpPage> createState() => _OtpPageState();
 }
 
-class _Otp_PageState extends State<Otp_Page> {
+class _OtpPageState extends State<OtpPage> {
   TextEditingController otpController1 = TextEditingController();
   TextEditingController otpController2 = TextEditingController();
   TextEditingController otpController3 = TextEditingController();
@@ -41,7 +41,7 @@ class _Otp_PageState extends State<Otp_Page> {
                 ),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.only(left: 20, bottom: 20),
               child: Text(
@@ -53,7 +53,7 @@ class _Otp_PageState extends State<Otp_Page> {
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.only(left: 30, right: 30),
               child: Form(
@@ -68,8 +68,8 @@ class _Otp_PageState extends State<Otp_Page> {
                 ),
               ),
             ),
-            SizedBox(height: 28),
-            Center(
+            const SizedBox(height: 28),
+            const Center(
               child: Text(
                 "Didn’t receive OTP code?",
                 style: TextStyle(
@@ -79,7 +79,7 @@ class _Otp_PageState extends State<Otp_Page> {
                 ),
               ),
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             Center(
               child: InkWell(
                 splashColor: Colors.transparent,
@@ -95,7 +95,7 @@ class _Otp_PageState extends State<Otp_Page> {
                 ),
               ),
             ),
-            SizedBox(height: 28),
+            const SizedBox(height: 28),
             Container(
               margin: const EdgeInsets.only(left: 20, right: 20),
               child: SizedBox(
@@ -104,21 +104,21 @@ class _Otp_PageState extends State<Otp_Page> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Name_gender()),
+                      MaterialPageRoute(builder: (context) => const NameGender()),
                     );                 },
+                  style: ElevatedButton.styleFrom(
+                    primary: background,
+                    padding: const EdgeInsets.only(top: 17, bottom: 16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
                   child: Text(
                     "Verify",
                     style: TextStyle(
                       color: white,
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                  style: ElevatedButton.styleFrom(
-                    primary: background,
-                    padding: EdgeInsets.only(top: 17, bottom: 16),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
                 ),

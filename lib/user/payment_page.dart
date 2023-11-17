@@ -1,17 +1,17 @@
-import 'package:flutter/cupertino.dart';
+// import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../color.dart';
-import 'emergency_contact.dart';
+// import 'emergency_contact.dart';
 
-class Payment_page extends StatefulWidget {
-  const Payment_page({Key? key}) : super(key: key);
+class PaymentPage extends StatefulWidget {
+  const PaymentPage({Key? key}) : super(key: key);
 
   @override
-  State<Payment_page> createState() => _Payment_pageState();
+  State<PaymentPage> createState() => _PaymentPageState();
 }
 
-class _Payment_pageState extends State<Payment_page> {
+class _PaymentPageState extends State<PaymentPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,12 +20,10 @@ class _Payment_pageState extends State<Payment_page> {
           children: [
             Stack(
               children: [
+                Image.asset('assets/images/image 4.png'),
                 Container(
-                  child: Image.asset('assets/images/image 4.png'), // Background image
-                ),
-                Container(
-                  margin: EdgeInsets.only(top: 25),
-                  padding: EdgeInsets.only(left: 20, right: 20, bottom: 30),
+                  margin: const EdgeInsets.only(top: 25),
+                  padding: const EdgeInsets.only(left: 20, right: 20, bottom: 30),
                   child: Row(
                     children: [
                       Container(
@@ -40,7 +38,7 @@ class _Payment_pageState extends State<Payment_page> {
                             //   MaterialPageRoute(builder: (context) => Book_ride()),
                             // );
                           },
-                          icon: Icon(Icons.arrow_back),
+                          icon: const Icon(Icons.arrow_back),
                           color: white,
                           highlightColor: Colors.transparent,
                         ),
@@ -70,7 +68,7 @@ class _Payment_pageState extends State<Payment_page> {
                                 ),
 
                                 // Background image
-                                SizedBox(height: 5),
+                                const SizedBox(height: 5),
                                 Text(
                                   "Emergency Call",
                                   style: TextStyle(
@@ -90,9 +88,9 @@ class _Payment_pageState extends State<Payment_page> {
                                   style: ButtonStyle(
                                     foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
                                     backgroundColor: MaterialStateProperty.all<Color>(background),
-                                    minimumSize: MaterialStateProperty.all<Size>(Size(150, 50)),
+                                    minimumSize: MaterialStateProperty.all<Size>(const Size(150, 50)),
                                   ),
-                                  child: Text("Submit"),
+                                  child: const Text("Submit"),
                                 ),
                               ),
                             ],
@@ -103,7 +101,7 @@ class _Payment_pageState extends State<Payment_page> {
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all<Color>(background),
                       padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
-                        EdgeInsets.only(top: 17, bottom: 16),
+                        const EdgeInsets.only(top: 17, bottom: 16),
                       ),
                       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
@@ -111,7 +109,7 @@ class _Payment_pageState extends State<Payment_page> {
                         ),
                       ),
                     ),
-                    child: Icon(
+                    child: const Icon(
                       Icons.call,
                       size: 40,
                       color: Colors.white,
@@ -136,7 +134,7 @@ class _Payment_pageState extends State<Payment_page> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Text(
+                      const Text(
                         'Payment    ₹160 ',
                         style: TextStyle(
                           fontSize: 20,
@@ -180,7 +178,7 @@ class _Payment_pageState extends State<Payment_page> {
                                   fontSize: 24,
                                 ),
                               ),
-                              SizedBox(height: 18),
+                              const SizedBox(height: 18),
                               Text(
                                 "Share your experience in scaling",
                                 style: TextStyle(
@@ -236,9 +234,9 @@ class _Payment_pageState extends State<Payment_page> {
                                       background),
                                   minimumSize:
                                   MaterialStateProperty.all<Size>(
-                                      Size(150, 50)),
+                                      const Size(150, 50)),
                                 ),
-                                child: Text("Submit"),
+                                child: const Text("Submit"),
                               ),
                             ),
 
@@ -250,6 +248,18 @@ class _Payment_pageState extends State<Payment_page> {
 
                     );
                   },
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all<Color>( background),
+                    padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
+                      const EdgeInsets.only(top: 17, bottom: 16),
+
+                    ),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                  ),
 
                   child: Text(
                     "Payment",
@@ -257,18 +267,6 @@ class _Payment_pageState extends State<Payment_page> {
                       color: white,
                       fontSize: 20,
                       fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>( background),
-                    padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
-                      EdgeInsets.only(top: 17, bottom: 16),
-
-                    ),
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                      RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
                     ),
                   ),
 

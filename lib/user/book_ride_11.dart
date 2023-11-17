@@ -1,18 +1,18 @@
 import 'package:elekgo/user/book_ride_10.dart';
 import 'package:elekgo/user/book_ride_12.dart';
-import 'package:flutter/cupertino.dart';
+// import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../color.dart';
 
-class Book_ride_11 extends StatefulWidget {
-  const Book_ride_11({Key? key}) : super(key: key);
+class BookRide11 extends StatefulWidget {
+  const BookRide11({Key? key}) : super(key: key);
 
   @override
-  State<Book_ride_11> createState() => _Book_ride_11State();
+  State<BookRide11> createState() => _BookRide11State();
 }
 
-class _Book_ride_11State extends State<Book_ride_11> {
+class _BookRide11State extends State<BookRide11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,9 +21,7 @@ class _Book_ride_11State extends State<Book_ride_11> {
           children: [
             Stack(
               children: [
-                Container(
-                  child: Image.asset('assets/images/image 4.png'), // Background image
-                ),
+                Image.asset('assets/images/image 4.png'),
                 Padding(
                   padding: const EdgeInsets.only(left: 20,top: 30),
                   child: Container(
@@ -32,14 +30,14 @@ class _Book_ride_11State extends State<Book_ride_11> {
                       shape: BoxShape.rectangle, // Makes the container circular
                     ),
                     child: IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back,
                         color: Colors.black, // Set the desired icon color
                       ),
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => Book_ride_10()),
+                          MaterialPageRoute(builder: (context) => const BookRide10()),
                         );// Handle menu button press
                       },
                     ),
@@ -270,7 +268,14 @@ class _Book_ride_11State extends State<Book_ride_11> {
                   onPressed: () {
                     // Handle button press
                   },
-                  child: Align(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: background,
+                    padding: const EdgeInsets.only(top: 17, bottom: 16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  child: const Align(
                     alignment: Alignment.centerLeft,
                     child: Text(
                       "Enter Upi-id",
@@ -279,13 +284,6 @@ class _Book_ride_11State extends State<Book_ride_11> {
                         fontSize: 16,
                         fontWeight: FontWeight.w600,
                       ),
-                    ),
-                  ),
-                  style: ElevatedButton.styleFrom(
-                    primary: background,
-                    padding: EdgeInsets.only(top: 17, bottom: 16),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
                 ),
@@ -301,22 +299,22 @@ class _Book_ride_11State extends State<Book_ride_11> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Book_ride_12()),
+                      MaterialPageRoute(builder: (context) => const BookRide12()),
                     );
                   },
-                  child: Text(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: background, // You should define 'background'
+                    padding: const EdgeInsets.only(top: 17, bottom: 16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  child: const Text(
                     "Confirm Rride  ",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                  style: ElevatedButton.styleFrom(
-                    primary: background, // You should define 'background'
-                    padding: EdgeInsets.only(top: 17, bottom: 16),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
                 ),

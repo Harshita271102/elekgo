@@ -23,17 +23,17 @@ class _LocationPageState extends State<LocationPage> {
             padding: EdgeInsets.zero,
             children: [
               DrawerHeader(
-                padding: EdgeInsets.all(0.0),
+                padding: const EdgeInsets.all(0.0),
                 decoration: BoxDecoration(
                   color: babypink,
                   border: null,
                 ),
                 child: Container(
                   width: MediaQuery.of(context).size.width,
-                  padding: EdgeInsets.only(top: 45),
+                  padding: const EdgeInsets.only(top: 45),
                   decoration: BoxDecoration(
                     color: background,
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(12),
                       bottomRight: Radius.circular(12),
                     ),
@@ -91,7 +91,7 @@ class _LocationPageState extends State<LocationPage> {
                           ),
                         ),
 
-                        Spacer(),
+                        const Spacer(),
                         // Add Spacer to push the next section to the right
                         Padding(
                           padding: const EdgeInsets.only(bottom: 50, right: 20),
@@ -126,7 +126,7 @@ class _LocationPageState extends State<LocationPage> {
                   child: Container(
                     color: litegreen, // Circular background color
                     child: IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.access_time,
                         color: Colors.red, // Set the desired icon color
                       ),
@@ -136,9 +136,9 @@ class _LocationPageState extends State<LocationPage> {
                     ),
                   ),
                 ),
-                title: Padding(
-                  padding: const EdgeInsets.only(left: 8),
-                  child: const Text(
+                title: const Padding(
+                  padding: EdgeInsets.only(left: 8),
+                  child: Text(
                     'My Ride',
                     style: TextStyle(
                       fontSize: 13,
@@ -148,7 +148,7 @@ class _LocationPageState extends State<LocationPage> {
                 ),
                 trailing: IconButton(
                   color: gree,
-                  icon: Icon(Icons.arrow_forward_ios),
+                  icon: const Icon(Icons.arrow_forward_ios),
                   onPressed: () {
                     // Navigator.push(
                     //   context,
@@ -163,7 +163,7 @@ class _LocationPageState extends State<LocationPage> {
                   child: Container(
                     color: litegreen, // Circular background color
                     child: IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.access_time,
                         color: Colors.red, // Set the desired icon color
                       ),
@@ -173,9 +173,9 @@ class _LocationPageState extends State<LocationPage> {
                     ),
                   ),
                 ),
-                title: Padding(
-                  padding: const EdgeInsets.only(left: 8),
-                  child: const Text(
+                title: const Padding(
+                  padding: EdgeInsets.only(left: 8),
+                  child: Text(
                     'Referral Code',
                     style: TextStyle(
                       fontSize: 13,
@@ -185,7 +185,7 @@ class _LocationPageState extends State<LocationPage> {
                 ),
                 trailing: IconButton(
                   color: gree,
-                  icon: Icon(Icons.arrow_forward_ios),
+                  icon: const Icon(Icons.arrow_forward_ios),
                   onPressed: () {
                     // Navigator.push(
                     //   context,
@@ -205,7 +205,7 @@ class _LocationPageState extends State<LocationPage> {
                   child: Container(
                     color: litegreen, // Circular background color
                     child: IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.access_time,
                         color: Colors.red, // Set the desired icon color
                       ),
@@ -215,9 +215,9 @@ class _LocationPageState extends State<LocationPage> {
                     ),
                   ),
                 ),
-                title: Padding(
-                  padding: const EdgeInsets.only(left: 8),
-                  child: const Text(
+                title: const Padding(
+                  padding: EdgeInsets.only(left: 8),
+                  child: Text(
                     'Share App',
                     style: TextStyle(
                       fontSize: 13,
@@ -227,7 +227,7 @@ class _LocationPageState extends State<LocationPage> {
                 ),
                 trailing: IconButton(
                   color: gree,
-                  icon: Icon(Icons.arrow_forward_ios),
+                  icon: const Icon(Icons.arrow_forward_ios),
                   onPressed: () {
                     // Navigator.push(
                     //   context,
@@ -242,7 +242,7 @@ class _LocationPageState extends State<LocationPage> {
                   child: Container(
                     color: litegreen, // Circular background color
                     child: IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.access_time,
                         color: Colors.red, // Set the desired icon color
                       ),
@@ -252,9 +252,9 @@ class _LocationPageState extends State<LocationPage> {
                     ),
                   ),
                 ),
-                title: Padding(
-                  padding: const EdgeInsets.only(left: 8),
-                  child: const Text(
+                title: const Padding(
+                  padding: EdgeInsets.only(left: 8),
+                  child: Text(
                     'Emergency Contact ',
                     style: TextStyle(
                       fontSize: 13,
@@ -264,7 +264,7 @@ class _LocationPageState extends State<LocationPage> {
                 ),
                 trailing: IconButton(
                   color: gree,
-                  icon: Icon(Icons.arrow_forward_ios),
+                  icon: const Icon(Icons.arrow_forward_ios),
                   onPressed: () {
                     // Navigator.push(
                     //   context,
@@ -279,7 +279,7 @@ class _LocationPageState extends State<LocationPage> {
                   child: Container(
                     color: litegreen, // Circular background color
                     child: IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.access_time,
                         color: Colors.red, // Set the desired icon color
                       ),
@@ -287,9 +287,9 @@ class _LocationPageState extends State<LocationPage> {
                     ),
                   ),
                 ),
-                title: Padding(
-                  padding: const EdgeInsets.only(left: 8),
-                  child: const Text(
+                title: const Padding(
+                  padding: EdgeInsets.only(left: 8),
+                  child: Text(
                     'FAQs ',
                     style: TextStyle(
                       fontSize: 13,
@@ -299,7 +299,7 @@ class _LocationPageState extends State<LocationPage> {
                 ),
                 trailing: IconButton(
                   color: gree,
-                  icon: Icon(Icons.arrow_forward_ios),
+                  icon: const Icon(Icons.arrow_forward_ios),
                   onPressed: () {
                     // Navigator.push(
                     //   context,
@@ -314,7 +314,7 @@ class _LocationPageState extends State<LocationPage> {
                   child: Container(
                     color: litegreen, // Circular background color
                     child: IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.access_time,
                         color: Colors.red, // Set the desired icon color
                       ),
@@ -324,9 +324,9 @@ class _LocationPageState extends State<LocationPage> {
                     ),
                   ),
                 ),
-                title: Padding(
-                  padding: const EdgeInsets.only(left: 8),
-                  child: const Text(
+                title: const Padding(
+                  padding: EdgeInsets.only(left: 8),
+                  child: Text(
                     'About',
                     style: TextStyle(
                       fontSize: 13,
@@ -336,7 +336,7 @@ class _LocationPageState extends State<LocationPage> {
                 ),
                 trailing: IconButton(
                   color: gree,
-                  icon: Icon(Icons.arrow_forward_ios),
+                  icon: const Icon(Icons.arrow_forward_ios),
                   onPressed: () {
                     // Navigator.push(
                     //   context,
@@ -356,7 +356,7 @@ class _LocationPageState extends State<LocationPage> {
                   child: Container(
                     color: litegreen, // Circular background color
                     child: IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.access_time,
                         color: Colors.red, // Set the desired icon color
                       ),
@@ -366,9 +366,9 @@ class _LocationPageState extends State<LocationPage> {
                     ),
                   ),
                 ),
-                title: Padding(
-                  padding: const EdgeInsets.only(left: 8),
-                  child: const Text(
+                title: const Padding(
+                  padding: EdgeInsets.only(left: 8),
+                  child: Text(
                     'Logout',
                     style: TextStyle(
                       fontSize: 13,
@@ -378,7 +378,7 @@ class _LocationPageState extends State<LocationPage> {
                 ),
                 trailing: IconButton(
                   color: gree,
-                  icon: Icon(Icons.arrow_forward_ios),
+                  icon: const Icon(Icons.arrow_forward_ios),
                   onPressed: () {
                     // Handle search button press
                   },
@@ -399,7 +399,7 @@ class _LocationPageState extends State<LocationPage> {
       body: Stack(
         children: [
           Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('assets/images/map 1.png'),
                 fit: BoxFit.cover,
@@ -413,9 +413,9 @@ class _LocationPageState extends State<LocationPage> {
               child: ClipOval(
                 child: Container(
                   color: Colors.white,
-                  padding: EdgeInsets.all(8.0), // Adjust the padding as needed
+                  padding: const EdgeInsets.all(8.0), // Adjust the padding as needed
                   child: IconButton(
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.menu,
                       color: Colors.black, // Set the desired icon color
                     ),
@@ -439,7 +439,7 @@ class _LocationPageState extends State<LocationPage> {
               width: 500,
               decoration: BoxDecoration(
                 color: background,
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(60),
                   topRight: Radius.circular(60),
                 ),
@@ -447,7 +447,7 @@ class _LocationPageState extends State<LocationPage> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     "Welcome to your dashboard",
                     style: TextStyle(
                       fontSize: 18,
@@ -455,8 +455,8 @@ class _LocationPageState extends State<LocationPage> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 20),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 20),
                     child: Text(
                       "Yayy! We have found the nearest Elekgo  ",
                       style: TextStyle(
@@ -466,7 +466,7 @@ class _LocationPageState extends State<LocationPage> {
                       ),
                     ),
                   ),
-                  Text(
+                  const Text(
                     " for you. Select your exclusive Elekgo and ",
                     style: TextStyle(
                       fontSize: 12,
@@ -474,7 +474,7 @@ class _LocationPageState extends State<LocationPage> {
                       // fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Text(
+                  const Text(
                     " enjoy a great ride. Enjoy!",
                     style: TextStyle(
                       fontSize: 12,
@@ -482,68 +482,66 @@ class _LocationPageState extends State<LocationPage> {
                       // fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Container(
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: Container(
-                            height: 55,
-                            width: 133,
-                            margin: const EdgeInsets.only(
-                                left: 20, right: 20, top: 25),
-                            child: ElevatedButton(
-                              onPressed: () {
-                                // Handle button press
-                              },
-                              child: Text(
-                                "No,Thanks",
-                                style: TextStyle(
-                                  color: background,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w600,
-                                ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          height: 55,
+                          width: 133,
+                          margin: const EdgeInsets.only(
+                              left: 20, right: 20, top: 25),
+                          child: ElevatedButton(
+                            onPressed: () {
+                              // Handle button press
+                            },
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: white,
+                              padding: const EdgeInsets.only(top: 17, bottom: 16),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10),
                               ),
-                              style: ElevatedButton.styleFrom(
-                                primary: white,
-                                padding: EdgeInsets.only(top: 17, bottom: 16),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                ),
+                            ),
+                            child: Text(
+                              "No,Thanks",
+                              style: TextStyle(
+                                color: background,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w600,
                               ),
                             ),
                           ),
                         ),
-                        Expanded(
-                          child: Container(
-                            height: 55,
-                            width: 133,
-                            margin: const EdgeInsets.only(
-                                left: 20, right: 20, top: 25),
-                            child: ElevatedButton(
-                              onPressed: () {
-                                // Handle button press for the third container
-                              },
-                              child: Text(
-                                "Yes",
-                                style: TextStyle(
-                                  color: black,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
-                                ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          height: 55,
+                          width: 133,
+                          margin: const EdgeInsets.only(
+                              left: 20, right: 20, top: 25),
+                          child: ElevatedButton(
+                            onPressed: () {
+                              // Handle button press for the third container
+                            },
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: white,
+                              // You should define 'background'
+                              padding: const EdgeInsets.only(top: 17, bottom: 16),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10),
                               ),
-                              style: ElevatedButton.styleFrom(
-                                primary: white,
-                                // You should define 'background'
-                                padding: EdgeInsets.only(top: 17, bottom: 16),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                ),
+                            ),
+                            child: Text(
+                              "Yes",
+                              style: TextStyle(
+                                color: black,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
                           ),
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                 ],
               ),

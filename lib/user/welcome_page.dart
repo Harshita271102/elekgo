@@ -65,7 +65,7 @@ class _WelcomePageState extends State<WelcomePage> {
                 wordSpacing: 0.2,
               ),
             ),
-            Text(
+            const Text(
               "The fastest app to book a scooter, or a bike online near you",
               style: TextStyle(
                 color: Colors.grey,
@@ -73,10 +73,10 @@ class _WelcomePageState extends State<WelcomePage> {
                 fontWeight: FontWeight.w300,
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             TextFormField(
               controller: mobileNumberController,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Mobile Number',
                 prefixIcon: Icon(Icons.phone),
                 border: OutlineInputBorder(),
@@ -92,10 +92,10 @@ class _WelcomePageState extends State<WelcomePage> {
                 return null; // Return null for no validation error
               },
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             TextFormField(
               controller: emailController,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Email',
                 prefixIcon: Icon(Icons.email),
                 border: OutlineInputBorder(),
@@ -116,30 +116,30 @@ class _WelcomePageState extends State<WelcomePage> {
             SizedBox(
               width: double.infinity,
               child: Container(
-                margin: EdgeInsets.only(top: 70),
+                margin: const EdgeInsets.only(top: 70),
                 color: Colors.blue,
                 child: ElevatedButton(
                   onPressed: () {
                     if (_formKey.currentState!.validate()) {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => Otp_Page()),
+                        MaterialPageRoute(builder: (context) => const OtpPage()),
                       );
                     }
                   },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: background,
+                    padding: const EdgeInsets.only(top: 17, bottom: 16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
                   child: Text(
                     'Get OTP Verification',
                     style: TextStyle(
                       color: white,
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                  style: ElevatedButton.styleFrom(
-                    primary: background,
-                    padding: EdgeInsets.only(top: 17, bottom: 16),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
                 ),

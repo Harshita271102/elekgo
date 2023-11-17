@@ -1,18 +1,18 @@
 import 'package:elekgo/user/book_ride_9.dart';
-import 'package:flutter/cupertino.dart';
+// import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../color.dart';
 
-class Set_location extends StatefulWidget {
-  const Set_location({Key? key}) : super(key: key);
+class SetLocation extends StatefulWidget {
+  const SetLocation({Key? key}) : super(key: key);
 
 
   @override
-  State<Set_location> createState() => _Set_locationState();
+  State<SetLocation> createState() => _SetLocationState();
 }
 
-class _Set_locationState extends State<Set_location> {
+class _SetLocationState extends State<SetLocation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,12 +20,12 @@ class _Set_locationState extends State<Set_location> {
         backgroundColor: Colors.transparent, // Set the background color of the app bar to transparent
         elevation: 0, // Remove the shadow under the app bar
         title: Container(
-          padding: EdgeInsets.symmetric(horizontal: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 10),
           decoration: BoxDecoration(
             color: greylite,
             borderRadius: BorderRadius.circular(10),
           ),
-          child: TextField(
+          child: const TextField(
             decoration: InputDecoration(
               hintText: 'Search drop location',
               border: InputBorder.none,
@@ -44,7 +44,7 @@ class _Set_locationState extends State<Set_location> {
                   child: Container(
                     color: litegreen, // Circular background color
                     child: IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.access_time,
                         color: Colors.black, // Set the desired icon color
                       ),
@@ -60,7 +60,7 @@ class _Set_locationState extends State<Set_location> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         'Alpha One Mall',
                         style: TextStyle(
                           fontSize: 13,
@@ -79,11 +79,11 @@ class _Set_locationState extends State<Set_location> {
                 ),
                 trailing: IconButton(
                   color: gree,
-                  icon: Icon(Icons.arrow_forward_ios),
+                  icon: const Icon(Icons.arrow_forward_ios),
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => BookRide9()),
+                      MaterialPageRoute(builder: (context) => const BookRide9()),
                     );
                     },
                 ),
@@ -98,7 +98,7 @@ class _Set_locationState extends State<Set_location> {
                   child: Container(
                     color:  litegreen, // Circular background color
                     child: IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.access_time,
                         color: Colors.black, // Set the desired icon color
                       ),
@@ -115,7 +115,7 @@ class _Set_locationState extends State<Set_location> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         'Alpha One Mall',
                         style: TextStyle(
                           fontSize: 13,
@@ -135,7 +135,7 @@ class _Set_locationState extends State<Set_location> {
                 ),
                 trailing: IconButton(
                   color: gree,
-                  icon: Icon(Icons.arrow_forward_ios),
+                  icon: const Icon(Icons.arrow_forward_ios),
                   onPressed: () {
                     // Handle search button press
                   },
@@ -149,7 +149,7 @@ class _Set_locationState extends State<Set_location> {
                   child: Container(
                     color: litegreen, // Circular background color
                     child: IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.access_time,
                         color: Colors.black, // Set the desired icon color
                       ),
@@ -165,7 +165,7 @@ class _Set_locationState extends State<Set_location> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         'Alpha One Mall',
                         style: TextStyle(
                           fontSize: 13,
@@ -184,7 +184,7 @@ class _Set_locationState extends State<Set_location> {
                 ),
                 trailing: IconButton(
                   color: gree,
-                  icon: Icon(Icons.arrow_forward_ios),
+                  icon: const Icon(Icons.arrow_forward_ios),
                   onPressed: () {
                   },
                 ),
@@ -197,7 +197,7 @@ class _Set_locationState extends State<Set_location> {
                   child: Container(
                     color: litegreen, // Circular background color
                     child: IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.access_time,
                         color: Colors.black, // Set the desired icon color
                       ),
@@ -213,7 +213,7 @@ class _Set_locationState extends State<Set_location> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         'Alpha One Mall',
                         style: TextStyle(
                           fontSize: 13,
@@ -232,7 +232,7 @@ class _Set_locationState extends State<Set_location> {
                 ),
                 trailing: IconButton(
                   color: gree,
-                  icon: Icon(Icons.arrow_forward_ios),
+                  icon: const Icon(Icons.arrow_forward_ios),
                   onPressed: () {
                   },
                 ),
@@ -244,7 +244,7 @@ class _Set_locationState extends State<Set_location> {
                   child: Container(
                     color: litegreen, // Circular background color
                     child: IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.access_time,
                         color: Colors.black, // Set the desired icon color
                       ),
@@ -260,7 +260,7 @@ class _Set_locationState extends State<Set_location> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         'Alpha One Mall',
                         style: TextStyle(
                           fontSize: 13,
@@ -279,7 +279,7 @@ class _Set_locationState extends State<Set_location> {
                 ),
                 trailing: IconButton(
                   color: gree,
-                  icon: Icon(Icons.arrow_forward_ios),
+                  icon: const Icon(Icons.arrow_forward_ios),
                   onPressed: () {
                   },
                 ),
@@ -292,7 +292,7 @@ class _Set_locationState extends State<Set_location> {
                   child: Container(
                     color: litegreen, // Circular background color
                     child: IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.access_time,
                         color: Colors.black, // Set the desired icon color
                       ),
@@ -308,7 +308,7 @@ class _Set_locationState extends State<Set_location> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         'Alpha One Mall',
                         style: TextStyle(
                           fontSize: 13,
@@ -327,7 +327,7 @@ class _Set_locationState extends State<Set_location> {
                 ),
                 trailing: IconButton(
                   color: gree,
-                  icon: Icon(Icons.arrow_forward_ios),
+                  icon: const Icon(Icons.arrow_forward_ios),
                   onPressed: () {
                   },
                 ),
@@ -340,7 +340,7 @@ class _Set_locationState extends State<Set_location> {
                   child: Container(
                     color: litegreen, // Circular background color
                     child: IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.access_time,
                         color: Colors.black, // Set the desired icon color
                       ),
@@ -356,7 +356,7 @@ class _Set_locationState extends State<Set_location> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         'Alpha One Mall',
                         style: TextStyle(
                           fontSize: 13,
@@ -375,7 +375,7 @@ class _Set_locationState extends State<Set_location> {
                 ),
                 trailing: IconButton(
                   color: gree,
-                  icon: Icon(Icons.arrow_forward_ios),
+                  icon: const Icon(Icons.arrow_forward_ios),
                   onPressed: () {
                   },
                 ),

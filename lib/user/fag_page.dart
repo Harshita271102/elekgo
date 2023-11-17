@@ -1,14 +1,14 @@
 import 'package:elekgo/color.dart';
 import 'package:flutter/material.dart';
 
-class Fag_page extends StatefulWidget {
-  const Fag_page({Key? key}) : super(key: key);
+class FagPage extends StatefulWidget {
+  const FagPage({Key? key}) : super(key: key);
 
   @override
-  State<Fag_page> createState() => _Fag_pageState();
+  State<FagPage> createState() => _FagPageState();
 }
 
-class _Fag_pageState extends State<Fag_page> {
+class _FagPageState extends State<FagPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +17,7 @@ class _Fag_pageState extends State<Fag_page> {
           Container(
             padding: const EdgeInsets.all(20),
             alignment: Alignment.topLeft,
-            child: Text(
+            child: const Text(
               'FAQ',
               style: TextStyle(
                 color: Colors.red,
