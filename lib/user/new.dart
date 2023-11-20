@@ -27,7 +27,7 @@ class _NewState extends State<New> {
                 DrawerHeader(
                   padding: const EdgeInsets.all(0.0),
                   decoration: BoxDecoration(
-                    color: babypink,
+                    color: babyPink,
                     border: null,
                   ),
                   child: Container(
@@ -133,7 +133,7 @@ class _NewState extends State<New> {
                 ListTile(
                   leading: ClipOval(
                     child: Container(
-                      color: litegreen, // Circular background color
+                      color: liteGreen, // Circular background color
                       child: IconButton(
                         icon: const Icon(
                           Icons.access_time,
@@ -178,7 +178,7 @@ class _NewState extends State<New> {
                 ListTile(
                   leading: ClipOval(
                     child: Container(
-                      color: litegreen, // Circular background color
+                      color: liteGreen, // Circular background color
                       child: IconButton(
                         icon: const Icon(
                           Icons.access_time,
@@ -221,7 +221,7 @@ class _NewState extends State<New> {
                 ListTile(
                   leading: ClipOval(
                     child: Container(
-                      color: litegreen, // Circular background color
+                      color: liteGreen, // Circular background color
                       child: IconButton(
                         icon: const Icon(
                           Icons.access_time,
@@ -262,7 +262,7 @@ class _NewState extends State<New> {
                 ListTile(
                   leading: ClipOval(
                     child: Container(
-                      color: litegreen, // Circular background color
+                      color: liteGreen, // Circular background color
                       child: IconButton(
                         icon: const Icon(
                           Icons.access_time,
@@ -301,7 +301,7 @@ class _NewState extends State<New> {
                 ListTile(
                   leading: ClipOval(
                     child: Container(
-                      color: litegreen, // Circular background color
+                      color: liteGreen, // Circular background color
                       child: IconButton(
                         icon: const Icon(
                           Icons.access_time,
@@ -342,7 +342,7 @@ class _NewState extends State<New> {
                 ListTile(
                   leading: ClipOval(
                     child: Container(
-                      color: litegreen, // Circular background color
+                      color: liteGreen, // Circular background color
                       child: IconButton(
                         icon: const Icon(
                           Icons.access_time,
@@ -387,7 +387,7 @@ class _NewState extends State<New> {
                 ListTile(
                   leading: ClipOval(
                     child: Container(
-                      color: litegreen, // Circular background color
+                      color: liteGreen, // Circular background color
                       child: IconButton(
                         icon: const Icon(
                           Icons.access_time,

@@ -12,276 +12,578 @@ class PaymentPage extends StatefulWidget {
 }
 
 class _PaymentPageState extends State<PaymentPage> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Stack(
-              children: [
-                Image.asset('assets/images/image 4.png'),
-                Container(
-                  margin: const EdgeInsets.only(top: 25),
-                  padding: const EdgeInsets.only(left: 20, right: 20, bottom: 30),
-                  child: Row(
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          color: background,
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: IconButton(
-                          onPressed: () {
-                            // Navigator.push(
-                            //   context,
-                            //   MaterialPageRoute(builder: (context) => Book_ride()),
-                            // );
-                          },
-                          icon: const Icon(Icons.arrow_back),
-                          color: white,
-                          highlightColor: Colors.transparent,
-                        ),
-                      ),
-
-                    ],
-                  ),
+      key: _scaffoldKey,
+      drawer: Drawer(
+        child: Container(
+          padding: EdgeInsets.zero,
+          child: ListView(
+            padding: EdgeInsets.zero,
+            children: [
+              DrawerHeader(
+                padding: const EdgeInsets.all(0.0),
+                decoration: BoxDecoration(
+                  color: babyPink,
+                  border: null,
                 ),
-                Container(
-                  width: 50,
-                  height: 50,
-                  margin: const EdgeInsets.only(top: 600, left: 20),
-                  child: ElevatedButton(
-                    onPressed: () {
-                      showDialog(
-                        context: context,
-                        builder: (context) {
-                          return AlertDialog(
-                            content: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Center(
-                                  child: Padding(
-                                    padding: const EdgeInsets.only(top: 30),
-                                    child: Image.asset('assets/images/Content.png'), // Background image
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  padding: const EdgeInsets.only(top: 45),
+                  decoration: BoxDecoration(
+                    color: background,
+                    borderRadius: const BorderRadius.only(
+                      bottomLeft: Radius.circular(12),
+                      bottomRight: Radius.circular(12),
+                    ),
+                    border: null,
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 30, left: 10),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Column(
+                          children: [
+                            ClipOval(
+                              child: CircleAvatar(
+                                backgroundColor: white,
+                                // Background color of the circle
+                                child: IconButton(
+                                  icon: Icon(
+                                    Icons.person_rounded,
+                                    color:
+                                    background, // Set the desired icon color
                                   ),
-                                ),
-
-                                // Background image
-                                const SizedBox(height: 5),
-                                Text(
-                                  "Emergency Call",
-                                  style: TextStyle(
-                                    color: black  ,
-                                    fontSize: 18,
-                                  ),
-                                ),
-                              ],
-                            ),
-
-                            actions: [
-                              Center(
-                                child: TextButton(
                                   onPressed: () {
-                                    Navigator.of(context).pop(); // Close the dialog
+                                    // Handle menu button press
                                   },
-                                  style: ButtonStyle(
-                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                                    backgroundColor: MaterialStateProperty.all<Color>(background),
-                                    minimumSize: MaterialStateProperty.all<Size>(const Size(150, 50)),
-                                  ),
-                                  child: const Text("Submit"),
                                 ),
                               ),
-                            ],
-                          );
-                        },
-                      );
-                    },
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all<Color>(background),
-                      padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
-                        const EdgeInsets.only(top: 17, bottom: 16),
-                      ),
-                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                        RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
+                            ),
+                          ],
                         ),
-                      ),
-                    ),
-                    child: const Icon(
-                      Icons.call,
-                      size: 40,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
 
-
-
-
-                // Padding(
-                //   padding: const EdgeInsets.only(top: 750, left: 50),
-                //   child: Image.asset('assets/images/car_3440311 1.png'),
-                // ),
-              ],
-            ),
-
-            ListTile(
-
-                title: Padding(
-                  padding: const EdgeInsets.only(left: 8),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      const Text(
-                        'Payment    ₹160 ',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      Text(
-                        'Customer ID    1234556',
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: background, // Define 'greetext' or use a color code
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-
-              ),
-            Container(
-              width: 320,
-              height: 55,
-              margin: const EdgeInsets.only(top: 40, left: 20),
-              child: SizedBox(
-                width: double.infinity,
-
-                child: ElevatedButton(
-                  onPressed: () {
-                    showDialog(
-                      context: context,
-                      builder: (context) {
-                        return AlertDialog(
-                          content: Column(
-                            mainAxisSize: MainAxisSize.min,
+                        Padding(
+                          padding: const EdgeInsets.only(left: 11),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-
                               Text(
-                                "Feedback For Driver",
+                                'Harshita !',
                                 style: TextStyle(
-                                  color: background,
+                                  color: white,
+                                  fontSize: 14,
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 24,
                                 ),
                               ),
-                              const SizedBox(height: 18),
                               Text(
-                                "Share your experience in scaling",
+                                "+91  7016806882",
+                                textAlign: TextAlign.left,
                                 style: TextStyle(
-                                  color: gree,
-                                  // fontWeight: FontWeight.bold,
-                                  fontSize: 12,
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.w400,
+                                  color: white,
                                 ),
                               ),
-
-
-
-
-
-                              Container(
-                                width: 200,
-                                height: 100,
-                                color: greelite,
-                                child: TextFormField(
-                                  decoration: InputDecoration(
-                                    hintText: 'Other............',
-                                    hintStyle: TextStyle(
-                                      color: textgree,
-                                      fontWeight: FontWeight.w600,
-                                    ),
-                                    border: InputBorder.none,
-                                  ),
-                                  keyboardType: TextInputType.text, // Use TextInputType.text to limit to a single line
-                                  textInputAction: TextInputAction.done, // Change this to suit your needs
-                                  onFieldSubmitted: (value) {
-                                    // Add your action here when the Enter key is pressed
-                                  },
-                                ),
-                              )
-
-
-
                             ],
                           ),
-                          actions: [
-                            Center(
-                              child: TextButton(
-                                onPressed: () {
-                                  // Navigator.push(
-                                  //   context,
-                                  //   MaterialPageRoute(builder: (context) => Book_ride()),
-                                  // );
-                                },
-                                style: ButtonStyle(
-                                  foregroundColor:
-                                  MaterialStateProperty.all<Color>(white),
-                                  backgroundColor:
-                                  MaterialStateProperty.all<Color>(
-                                      background),
-                                  minimumSize:
-                                  MaterialStateProperty.all<Size>(
-                                      const Size(150, 50)),
-                                ),
-                                child: const Text("Submit"),
-                              ),
+                        ),
+
+                        const Spacer(),
+                        // Add Spacer to push the next section to the right
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 50, right: 20),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
                             ),
-
-                          ],
-
-                        );
-
-                      },
-
-                    );
-                  },
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>( background),
-                    padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
-                      const EdgeInsets.only(top: 17, bottom: 16),
-
+                            child: IconButton(
+                              onPressed: () {
+                                // Navigator.push(
+                                //   context,
+                                //   MaterialPageRoute(builder: (context) => Profile_page()
+                                //   ),
+                                // );
+                              },
+                              icon: Icon(
+                                Icons.edit,
+                                size: 20,
+                                color: white,
+                              ),
+                              highlightColor: Colors.transparent,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                      RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
+                  ),
+                ),
+              ),
+              ListTile(
+                leading: ClipOval(
+                  child: Container(
+                    color: liteGreen, // Circular background color
+                    child: IconButton(
+                      icon: const Icon(
+                        Icons.access_time,
+                        color: Colors.red, // Set the desired icon color
+                      ),
+                      onPressed: () {
+                        // Handle menu button press
+                      },
+                    ),
+                  ),
+                ),
+                title: const Padding(
+                  padding: EdgeInsets.only(left: 8),
+                  child: Text(
+                    'My Ride',
+                    style: TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
+                trailing: IconButton(
+                  color: gree,
+                  icon: const Icon(Icons.arrow_forward_ios),
+                  onPressed: () {
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(builder: (context) => Set_location()),
+                    // );
+                    // Handle search button press
+                  },
+                ),
+              ),
+              ListTile(
+                leading: ClipOval(
+                  child: Container(
+                    color: liteGreen, // Circular background color
+                    child: IconButton(
+                      icon: const Icon(
+                        Icons.access_time,
+                        color: Colors.red, // Set the desired icon color
+                      ),
+                      onPressed: () {
+                        // Handle menu button press
+                      },
+                    ),
+                  ),
+                ),
+                title: const Padding(
+                  padding: EdgeInsets.only(left: 8),
+                  child: Text(
+                    'Referral Code',
+                    style: TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
+                trailing: IconButton(
+                  color: gree,
+                  icon: const Icon(Icons.arrow_forward_ios),
+                  onPressed: () {
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(builder: (context) => Referral_code()),
+                    // );
+                    // Handle search button press
+                  },
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(
+                    left: 14, right: 14, top: 5, bottom: 9),
+                child: Divider(color: line),
+              ),
+              ListTile(
+                leading: ClipOval(
+                  child: Container(
+                    color: liteGreen, // Circular background color
+                    child: IconButton(
+                      icon: const Icon(
+                        Icons.access_time,
+                        color: Colors.red, // Set the desired icon color
+                      ),
+                      onPressed: () {
+                        // Handle menu button press
+                      },
+                    ),
+                  ),
+                ),
+                title: const Padding(
+                  padding: EdgeInsets.only(left: 8),
+                  child: Text(
+                    'Share App',
+                    style: TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
+                trailing: IconButton(
+                  color: gree,
+                  icon: const Icon(Icons.arrow_forward_ios),
+                  onPressed: () {
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(builder: (context) => Emergency_contact()),
+                    // );
+                    // Handle search button press
+                  },
+                ),
+              ),
+              ListTile(
+                leading: ClipOval(
+                  child: Container(
+                    color: liteGreen, // Circular background color
+                    child: IconButton(
+                      icon: const Icon(
+                        Icons.access_time,
+                        color: Colors.red, // Set the desired icon color
+                      ),
+                      onPressed: () {
+                        // Handle menu button press
+                      },
+                    ),
+                  ),
+                ),
+                title: const Padding(
+                  padding: EdgeInsets.only(left: 8),
+                  child: Text(
+                    'Emergency Contact ',
+                    style: TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
+                trailing: IconButton(
+                  color: gree,
+                  icon: const Icon(Icons.arrow_forward_ios),
+                  onPressed: () {
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(builder: (context) => Emergency_contact()),
+                    // );
+                    // Handle search button press
+                  },
+                ),
+              ),
+              ListTile(
+                leading: ClipOval(
+                  child: Container(
+                    color: liteGreen, // Circular background color
+                    child: IconButton(
+                      icon: const Icon(
+                        Icons.access_time,
+                        color: Colors.red, // Set the desired icon color
+                      ),
+                      onPressed: () {},
+                    ),
+                  ),
+                ),
+                title: const Padding(
+                  padding: EdgeInsets.only(left: 8),
+                  child: Text(
+                    'FAQs ',
+                    style: TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
+                trailing: IconButton(
+                  color: gree,
+                  icon: const Icon(Icons.arrow_forward_ios),
+                  onPressed: () {
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(builder: (context) => Fag_page()),
+                    // );
+                    // Handle search button press
+                  },
+                ),
+              ),
+              ListTile(
+                leading: ClipOval(
+                  child: Container(
+                    color: liteGreen, // Circular background color
+                    child: IconButton(
+                      icon: const Icon(
+                        Icons.access_time,
+                        color: Colors.red, // Set the desired icon color
+                      ),
+                      onPressed: () {
+                        // Handle menu button press
+                      },
+                    ),
+                  ),
+                ),
+                title: const Padding(
+                  padding: EdgeInsets.only(left: 8),
+                  child: Text(
+                    'About',
+                    style: TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
+                trailing: IconButton(
+                  color: gree,
+                  icon: const Icon(Icons.arrow_forward_ios),
+                  onPressed: () {
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(builder: (context) => Fag_page()),
+                    // );
+                    // Handle search button press
+                  },
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(
+                    left: 14, right: 14, top: 5, bottom: 11),
+                child: Divider(color: line),
+              ),
+              ListTile(
+                leading: ClipOval(
+                  child: Container(
+                    color: liteGreen, // Circular background color
+                    child: IconButton(
+                      icon: const Icon(
+                        Icons.access_time,
+                        color: Colors.red, // Set the desired icon color
+                      ),
+                      onPressed: () {
+                        // Handle menu button press
+                      },
+                    ),
+                  ),
+                ),
+                title: const Padding(
+                  padding: EdgeInsets.only(left: 8),
+                  child: Text(
+                    'Logout',
+                    style: TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
+                trailing: IconButton(
+                  color: gree,
+                  icon: const Icon(Icons.arrow_forward_ios),
+                  onPressed: () {
+                    // Handle search button press
+                  },
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(
+                    left: 35, right: 35, top: 30, bottom: 9),
+                child: Container(
+                  height: 5, // Adjust the height to make the line thicker
+                  color: black, // Set the color you want
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+      body: Stack(
+        children: [
+          Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/images/map 1.png'),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+
+          Align(
+            alignment: Alignment.topLeft,
+            child: Padding(
+              padding: const EdgeInsets.only(top: 40, left: 30),
+              child: ClipOval(
+                child: Container(
+                  color: Colors.white,
+                  padding: const EdgeInsets.all(8.0), // Adjust the padding as needed
+                  child: IconButton(
+                    icon: const Icon(
+                      Icons.menu,
+                      color: Colors.black, // Set the desired icon color
+                    ),
+                    onPressed: () {
+                      // Open or close the drawer manually
+                      if (_scaffoldKey.currentState!.isDrawerOpen) {
+                        _scaffoldKey.currentState!.openEndDrawer();
+                      } else {
+                        _scaffoldKey.currentState!.openDrawer();
+                      }
+                    },
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              height: 400,
+              width: 500,
+              decoration: BoxDecoration(
+                color: background,
+                borderRadius: const BorderRadius.only(
+                  topLeft: Radius.circular(60),
+                  topRight: Radius.circular(60),
+                ),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+
+                  const Padding(
+                    padding: EdgeInsets.only(top: 20),
+                    child: Text(
+                      "Driver Name - kanu ",
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Colors.white,
+                        // fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
-
-                  child: Text(
-                    "Payment",
+                  const Text(
+                    " kanu Bike No - ts-01-xy-1234 ",
                     style: TextStyle(
-                      color: white,
-                      fontSize: 20,
-                      fontWeight: FontWeight.w600,
+                      fontSize: 12,
+                      color: Colors.white,
+                      // fontWeight: FontWeight.bold,
                     ),
                   ),
-
-                ),
-
-
+                  const Text(
+                    " Driver Id - 123456 ",
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.white,
+                      // fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Container(
+                    width: 360,
+                    height: 55,
+                    margin: const EdgeInsets.only(top: 50, left: 20),
+                    child: SizedBox(
+                      width: double.infinity,
+                      child: ElevatedButton(
+                        onPressed: () {
+                          // Validate the form
+                          // if (_formKey.currentState!.validate()) {
+                          //   Navigator.push(
+                          //     context,
+                          //     MaterialPageRoute(builder: (context) => const LocationPage()),
+                          //   );
+                          //
+                          //
+                          // }
+                        },
+                        style: ButtonStyle(
+                          backgroundColor:
+                          MaterialStateProperty.all<Color>(white),
+                          padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
+                            const EdgeInsets.only(top: 17, bottom: 16),
+                          ),
+                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                            RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                          ),
+                        ),
+                        child: Text(
+                          "Live Location Shared ",
+                          style: TextStyle(
+                            color: black,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
               ),
-
             ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 400,left: 20),
+            child: ElevatedButton(
+              onPressed: () {
+                // Add your onPressed logic here
+              },
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(background),
+                padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
+                  const EdgeInsets.only(top: 17, bottom: 16),
+                ),
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                ),
+              ),
+              child: const Icon(
+                Icons.call,
+                size: 40,
+                color: Colors.white,
+              ),
+            ),
+          ),
 
 
-            // Add more ListTile items or other widgets here
-          ],
-        ),
+
+
+
+          Expanded(
+            child: Container(
+              height: 37,
+              width: 245,
+              margin: const EdgeInsets.only(
+                  left: 90,  top: 500),
+              child: ElevatedButton(
+                onPressed: () {
+                  // Handle button press for the third container
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: black,
+                  // You should define 'background'
+                  padding: const EdgeInsets.only(top: 17, bottom: 16),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                ),
+                child: Text(
+                  "Payment -  150",
+                  style: TextStyle(
+                    color: white,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+          ),
+          // Add other widgets for the main content of the page
+        ],
       ),
     );
   }
+
 }

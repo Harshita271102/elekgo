@@ -15,7 +15,7 @@ class _Manu_pageState extends State<Manu_page> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: babypink,
+        backgroundColor: babyPink,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
         ),
@@ -58,7 +58,7 @@ class _Manu_pageState extends State<Manu_page> {
               DrawerHeader(
                 padding: EdgeInsets.all(0.0),
                 decoration: BoxDecoration(
-                  color: babypink,
+                  color: babyPink,
                   border: null,
                 ),
                 child: Container(
@@ -164,7 +164,7 @@ class _Manu_pageState extends State<Manu_page> {
               ListTile(
                 leading: ClipOval(
                   child: Container(
-                    color: litegreen, // Circular background color
+                    color: liteGreen, // Circular background color
                     child: IconButton(
                       icon: Icon(
                         Icons.access_time,
@@ -209,7 +209,7 @@ class _Manu_pageState extends State<Manu_page> {
               ListTile(
                 leading: ClipOval(
                   child: Container(
-                    color: litegreen, // Circular background color
+                    color: liteGreen, // Circular background color
                     child: IconButton(
                       icon: Icon(
                         Icons.access_time,
@@ -253,7 +253,7 @@ class _Manu_pageState extends State<Manu_page> {
               ListTile(
                 leading: ClipOval(
                   child: Container(
-                    color: litegreen, // Circular background color
+                    color: liteGreen, // Circular background color
                     child: IconButton(
                       icon: Icon(
                         Icons.access_time,
@@ -294,7 +294,7 @@ class _Manu_pageState extends State<Manu_page> {
               ListTile(
                 leading: ClipOval(
                   child: Container(
-                    color: litegreen, // Circular background color
+                    color: liteGreen, // Circular background color
                     child: IconButton(
                       icon: Icon(
                         Icons.access_time,
@@ -333,7 +333,7 @@ class _Manu_pageState extends State<Manu_page> {
               ListTile(
                 leading: ClipOval(
                   child: Container(
-                    color: litegreen, // Circular background color
+                    color: liteGreen, // Circular background color
                     child: IconButton(
                       icon: Icon(
                         Icons.access_time,
@@ -374,7 +374,7 @@ class _Manu_pageState extends State<Manu_page> {
               ListTile(
                 leading: ClipOval(
                   child: Container(
-                    color: litegreen, // Circular background color
+                    color: liteGreen, // Circular background color
                     child: IconButton(
                       icon: Icon(
                         Icons.access_time,
@@ -420,7 +420,7 @@ class _Manu_pageState extends State<Manu_page> {
               ListTile(
                 leading: ClipOval(
                   child: Container(
-                    color: litegreen, // Circular background color
+                    color: liteGreen, // Circular background color
                     child: IconButton(
                       icon: Icon(
                         Icons.access_time,

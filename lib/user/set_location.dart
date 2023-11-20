@@ -22,7 +22,7 @@ class _SetLocationState extends State<SetLocation> {
         title: Container(
           padding: const EdgeInsets.symmetric(horizontal: 10),
           decoration: BoxDecoration(
-            color: greylite,
+            color: greyLite,
             borderRadius: BorderRadius.circular(10),
           ),
           child: const TextField(
@@ -42,7 +42,7 @@ class _SetLocationState extends State<SetLocation> {
               child: ListTile(
                 leading: ClipOval(
                   child: Container(
-                    color: litegreen, // Circular background color
+                    color: liteGreen, // Circular background color
                     child: IconButton(
                       icon: const Icon(
                         Icons.access_time,
@@ -71,7 +71,7 @@ class _SetLocationState extends State<SetLocation> {
                         'Nr Railwai Stations , Gharatlodia Ahmedabad',
                         style: TextStyle(
                           fontSize: 11,
-                          color: greetext,
+                          color: greeText,
                         ),
                       ),
                     ],
@@ -96,7 +96,7 @@ class _SetLocationState extends State<SetLocation> {
               child: ListTile(
                 leading: ClipOval(
                   child: Container(
-                    color:  litegreen, // Circular background color
+                    color:  liteGreen, // Circular background color
                     child: IconButton(
                       icon: const Icon(
                         Icons.access_time,
@@ -126,7 +126,7 @@ class _SetLocationState extends State<SetLocation> {
                         'Nr Railwai Stations , Gharatlodia Ahmedabad',
                         style: TextStyle(
                           fontSize: 11,
-                          color: greetext,
+                          color: greeText,
 
                         ),
                       ),
@@ -147,7 +147,7 @@ class _SetLocationState extends State<SetLocation> {
               child: ListTile(
                 leading: ClipOval(
                   child: Container(
-                    color: litegreen, // Circular background color
+                    color: liteGreen, // Circular background color
                     child: IconButton(
                       icon: const Icon(
                         Icons.access_time,
@@ -176,7 +176,7 @@ class _SetLocationState extends State<SetLocation> {
                         'Nr Railwai Stations , Gharatlodia Ahmedabad',
                         style: TextStyle(
                           fontSize: 11,
-                          color: greetext,
+                          color: greeText,
                         ),
                       ),
                     ],
@@ -195,7 +195,7 @@ class _SetLocationState extends State<SetLocation> {
               child: ListTile(
                 leading: ClipOval(
                   child: Container(
-                    color: litegreen, // Circular background color
+                    color: liteGreen, // Circular background color
                     child: IconButton(
                       icon: const Icon(
                         Icons.access_time,
@@ -224,7 +224,7 @@ class _SetLocationState extends State<SetLocation> {
                         'Nr Railwai Stations , Gharatlodia Ahmedabad',
                         style: TextStyle(
                           fontSize: 11,
-                          color: greetext,
+                          color: greeText,
                         ),
                       ),
                     ],
@@ -242,7 +242,7 @@ class _SetLocationState extends State<SetLocation> {
               child: ListTile(
                 leading: ClipOval(
                   child: Container(
-                    color: litegreen, // Circular background color
+                    color: liteGreen, // Circular background color
                     child: IconButton(
                       icon: const Icon(
                         Icons.access_time,
@@ -271,7 +271,7 @@ class _SetLocationState extends State<SetLocation> {
                         'Nr Railwai Stations , Gharatlodia Ahmedabad',
                         style: TextStyle(
                           fontSize: 11,
-                          color: greetext,
+                          color: greeText,
                         ),
                       ),
                     ],
@@ -290,7 +290,7 @@ class _SetLocationState extends State<SetLocation> {
               child: ListTile(
                 leading: ClipOval(
                   child: Container(
-                    color: litegreen, // Circular background color
+                    color: liteGreen, // Circular background color
                     child: IconButton(
                       icon: const Icon(
                         Icons.access_time,
@@ -319,7 +319,7 @@ class _SetLocationState extends State<SetLocation> {
                         'Nr Railwai Stations , Gharatlodia Ahmedabad',
                         style: TextStyle(
                           fontSize: 11,
-                          color: greetext,
+                          color: greeText,
                         ),
                       ),
                     ],
@@ -338,7 +338,7 @@ class _SetLocationState extends State<SetLocation> {
               child: ListTile(
                 leading: ClipOval(
                   child: Container(
-                    color: litegreen, // Circular background color
+                    color: liteGreen, // Circular background color
                     child: IconButton(
                       icon: const Icon(
                         Icons.access_time,
@@ -367,7 +367,7 @@ class _SetLocationState extends State<SetLocation> {
                         'Nr Railwai Stations , Gharatlodia Ahmedabad',
                         style: TextStyle(
                           fontSize: 11,
-                          color: greetext,
+                          color: greeText,
                         ),
                       ),
                     ],

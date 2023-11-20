@@ -1,4 +1,5 @@
 import 'package:elekgo/color.dart';
+
 // import 'package:elekgo/user/profile_page.dart';
 // import 'package:elekgo/user/referral_code.dart';
 // import 'package:elekgo/user/set_location.dart';
@@ -8,7 +9,6 @@ import 'package:flutter/material.dart';
 // import 'emergency_contact.dart';
 // import 'fag_page.dart';
 
-
 class BookRide extends StatefulWidget {
   const BookRide({Key? key}) : super(key: key);
 
@@ -17,7 +17,8 @@ class BookRide extends StatefulWidget {
 }
 
 class _BookRideState extends State<BookRide> {
- final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,7 +32,7 @@ class _BookRideState extends State<BookRide> {
               DrawerHeader(
                 padding: const EdgeInsets.all(0.0),
                 decoration: BoxDecoration(
-                  color: babypink,
+                  color: babyPink,
                   border: null,
                 ),
                 child: Container(
@@ -60,7 +61,7 @@ class _BookRideState extends State<BookRide> {
                                   icon: Icon(
                                     Icons.person_rounded,
                                     color:
-                                    background, // Set the desired icon color
+                                        background, // Set the desired icon color
                                   ),
                                   onPressed: () {
                                     // Handle menu button press
@@ -130,7 +131,7 @@ class _BookRideState extends State<BookRide> {
               ListTile(
                 leading: ClipOval(
                   child: Container(
-                    color: litegreen, // Circular background color
+                    color: liteGreen, // Circular background color
                     child: IconButton(
                       icon: const Icon(
                         Icons.access_time,
@@ -167,7 +168,7 @@ class _BookRideState extends State<BookRide> {
               ListTile(
                 leading: ClipOval(
                   child: Container(
-                    color: litegreen, // Circular background color
+                    color: liteGreen, // Circular background color
                     child: IconButton(
                       icon: const Icon(
                         Icons.access_time,
@@ -209,7 +210,7 @@ class _BookRideState extends State<BookRide> {
               ListTile(
                 leading: ClipOval(
                   child: Container(
-                    color: litegreen, // Circular background color
+                    color: liteGreen, // Circular background color
                     child: IconButton(
                       icon: const Icon(
                         Icons.access_time,
@@ -246,7 +247,7 @@ class _BookRideState extends State<BookRide> {
               ListTile(
                 leading: ClipOval(
                   child: Container(
-                    color: litegreen, // Circular background color
+                    color: liteGreen, // Circular background color
                     child: IconButton(
                       icon: const Icon(
                         Icons.access_time,
@@ -283,7 +284,7 @@ class _BookRideState extends State<BookRide> {
               ListTile(
                 leading: ClipOval(
                   child: Container(
-                    color: litegreen, // Circular background color
+                    color: liteGreen, // Circular background color
                     child: IconButton(
                       icon: const Icon(
                         Icons.access_time,
@@ -318,7 +319,7 @@ class _BookRideState extends State<BookRide> {
               ListTile(
                 leading: ClipOval(
                   child: Container(
-                    color: litegreen, // Circular background color
+                    color: liteGreen, // Circular background color
                     child: IconButton(
                       icon: const Icon(
                         Icons.access_time,
@@ -360,7 +361,7 @@ class _BookRideState extends State<BookRide> {
               ListTile(
                 leading: ClipOval(
                   child: Container(
-                    color: litegreen, // Circular background color
+                    color: liteGreen, // Circular background color
                     child: IconButton(
                       icon: const Icon(
                         Icons.access_time,
@@ -412,29 +413,29 @@ class _BookRideState extends State<BookRide> {
               ),
             ),
           ),
-          Padding(padding: const EdgeInsets.all(20), child: Container(
+          Padding(
+            padding: const EdgeInsets.all(20),
+            child: Container(
               height: 50,
               // padding: EdgeInsets.all(10),
 
               decoration: const BoxDecoration(
                   color: Colors.white,
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(30),
-                  topRight: Radius.circular(30),
-                  bottomLeft: Radius.circular(30),
-                  bottomRight: Radius.circular(30)
-                )
-              ),
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(30),
+                      topRight: Radius.circular(30),
+                      bottomLeft: Radius.circular(30),
+                      bottomRight: Radius.circular(30))),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Align(
                     alignment: Alignment.topLeft,
                     child:
-                    // Padding(
-                    //   padding: const EdgeInsets.only(top: 40, left: 30),
-                    //   child:
-                    ClipOval(
+                        // Padding(
+                        //   padding: const EdgeInsets.only(top: 40, left: 30),
+                        //   child:
+                        ClipOval(
                       child: Container(
                         color: Colors.white,
                         // padding: EdgeInsets.all(8.0), // Adjust the padding as needed
@@ -452,7 +453,6 @@ class _BookRideState extends State<BookRide> {
                             }
                           },
                           // ),
-
                         ),
                       ),
                     ),
@@ -464,19 +464,89 @@ class _BookRideState extends State<BookRide> {
                     ],
                   ),
                   const Spacer(),
-                  IconButton(onPressed: (){}, icon: const Icon(CupertinoIcons.arrow_down_right))
+                  IconButton(
+                      onPressed: () {},
+                      icon: const Icon(CupertinoIcons.arrow_right))
                 ],
-              )
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 450,right: 30),
+            child: Align(
+              alignment: Alignment.topRight,
+              child: ClipOval(
+                child: Container(
+                  color: background,
+                  child: IconButton(
+                    icon: const Icon(
+                      Icons.arrow_forward_ios,
+                      color: Colors.black,
+                    ),
+                    onPressed: () {
+                      // Handle menu button press
+                    },
+                  ),
+                ),
+              ),
+            ),
+          ),
 
 
-
-
-          ),),
+          Padding(
+            padding: const EdgeInsets.only(top: 530, left: 20, right: 20),
+            child: Container(
+              height: 50,
+              decoration: BoxDecoration(
+                color: babyPink, // Use your defined color variable
+                borderRadius: const BorderRadius.only(
+                  topLeft:  Radius.circular(30),
+                  topRight:  Radius.circular(30),
+                  bottomLeft: Radius.circular(30),
+                  bottomRight: Radius.circular(30),
+                ),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Align(
+                    alignment: Alignment.topLeft,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        IconButton(
+                          icon: const Icon(
+                            Icons.arrow_forward_ios,
+                            color: Colors.black,
+                          ),
+                          onPressed: () {
+                            // Open or close the drawer manually
+                            if (_scaffoldKey.currentState!.isDrawerOpen) {
+                              _scaffoldKey.currentState!.openEndDrawer();
+                            } else {
+                              _scaffoldKey.currentState!.openDrawer();
+                            }
+                          },
+                        ),
+                        const Text(
+                          "Where to?",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
 
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              height: 400,
+              height: 300,
               width: 500,
               decoration: BoxDecoration(
                 color: background,
@@ -486,113 +556,70 @@ class _BookRideState extends State<BookRide> {
                 ),
               ),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
-                    "Welcome to your dashboard",
-                    style: TextStyle(
-                      fontSize: 18,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  const Padding(
-                    padding: EdgeInsets.only(top: 20),
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(left: 35, top: 30, right: 20),
                     child: Text(
-                      "Yayy! We have found the nearest Elekgo  ",
+                      "Drop Suggestions",
                       style: TextStyle(
-                        fontSize: 12,
-                        color: Colors.white,
-                        // fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                        color: black,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
-                  const Text(
-                    " for you. Select your exclusive Elekgo and ",
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.white,
-                      // fontWeight: FontWeight.bold,
+                  Padding(
+                    padding: const EdgeInsets.only(
+                        left: 35, right: 35, top: 20, bottom: 9),
+                    child: Container(
+                      height: 1, // Adjust the height to make the line thicker
+                      color: black, // Set the color you want
                     ),
                   ),
-                  const Text(
-                    " enjoy a great ride. Enjoy!",
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.white,
-                      // fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Container(
-                          height: 55,
-                          width: 133,
-                          margin: const EdgeInsets.only(
-                              left: 20, right: 20, top: 25),
-                          child: ElevatedButton(
-                            onPressed: () {
-                              // Handle button press
-                            },
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: white,
-                              padding: const EdgeInsets.only(top: 17, bottom: 16),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10),
-                              ),
-                            ),
-                            child: Text(
-                              "No,Thanks",
-                              style: TextStyle(
-                                color: background,
-                                fontSize: 16,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20),
+                    child: Row(
+                      children: [
+                        IconButton(
+                          onPressed: () {
+                            // Your onPressed callback
+                          },
+                          icon: const Icon(
+                            CupertinoIcons.location_solid,
+                            color: Colors.white,
                           ),
                         ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          height: 55,
-                          width: 133,
-                          margin: const EdgeInsets.only(
-                              left: 20, right: 20, top: 25),
-                          child: ElevatedButton(
-                            onPressed: () {
-                              // Handle button press for the third container
-                            },
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: white,
-                              // You should define 'background'
-                              padding: const EdgeInsets.only(top: 17, bottom: 16),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10),
-                              ),
-                            ),
-                            child: Text(
-                              "Yes",
-                              style: TextStyle(
-                                color: black,
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
+                        Text(
+                          "Select From Map",
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: black,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
-                      ),
-                    ],
+                        // Add more widgets here if needed
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(
+                        left: 35, right: 35, top: 20, bottom: 9),
+                    child: Container(
+                      height: 1, // Adjust the height to make the line thicker
+                      color: black, // Set the color you want
+                    ),
                   ),
                 ],
               ),
             ),
           )
+
           // Add other widgets for the main content of the page
         ],
       ),
     );
-
   }
 }
-

@@ -45,7 +45,7 @@ class _OTPState extends State<OTP> {
               child: Text(
                 "Enter the OTP sent to your mobile number ",
                 style: TextStyle(
-                  color: textgree,
+                  color: textGree,
                   fontSize: 14,
                   fontWeight: FontWeight.w400,
                 ),
@@ -87,7 +87,7 @@ class _OTPState extends State<OTP> {
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w400,
-                    color: textgree,
+                    color: textGree,
                     decoration: TextDecoration.underline,
                   ),
                 ),

@@ -101,7 +101,7 @@ class _referral_pageState extends State<referral_page> {
               decoration: InputDecoration(
                 hintText: 'Share your invite code',
                 hintStyle: TextStyle(
-                  color: textgree,
+                  color: textGree,
                   fontWeight: FontWeight.w600,
                 ),
                 border: InputBorder.none,

@@ -1,4 +1,5 @@
 import 'package:elekgo/color.dart';
+
 // import 'package:elekgo/user/book_ride.dart';
 // import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -40,7 +41,7 @@ class _NameGenderState extends State<NameGender> {
                 ],
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 40,right: 135),
+                padding: const EdgeInsets.only(top: 40, right: 135),
                 child: Text(
                   'Just one last Thing',
                   style: TextStyle(
@@ -50,7 +51,6 @@ class _NameGenderState extends State<NameGender> {
                   ),
                 ),
               ),
-
               Padding(
                 padding: const EdgeInsets.only(top: 20, left: 20, right: 20),
                 // Added right padding
@@ -69,7 +69,7 @@ class _NameGenderState extends State<NameGender> {
                     decoration: InputDecoration(
                       hintText: 'Enter Your Full Name',
                       hintStyle: TextStyle(
-                        color: textgree,
+                        color: textGree,
                         fontWeight: FontWeight.w600,
                       ),
                       border: InputBorder.none,
@@ -80,8 +80,6 @@ class _NameGenderState extends State<NameGender> {
                       }
                       return null; // Return null for no validation error
                     },
-
-
                   ),
                 ),
               ),
@@ -100,12 +98,12 @@ class _NameGenderState extends State<NameGender> {
                   ),
                   child: DropdownButtonFormField<String>(
                     value: dropdownValue,
-                    icon: Icon(Icons.arrow_drop_down, color: textgree),
+                    icon: Icon(Icons.arrow_drop_down, color: textGree),
                     // Dropdown icon
                     decoration: InputDecoration(
                       hintText: 'Select Gender',
                       hintStyle: TextStyle(
-                        color: textgree,
+                        color: textGree,
                         fontWeight: FontWeight.w600,
                       ),
                       border: InputBorder.none,
@@ -129,7 +127,7 @@ class _NameGenderState extends State<NameGender> {
                             value,
                             style: TextStyle(
                               fontSize: 16,
-                              color: textgree,
+                              color: textGree,
                               fontWeight: FontWeight.w600,
                             ),
                           ),
@@ -156,10 +154,9 @@ class _NameGenderState extends State<NameGender> {
                       if (_formKey.currentState!.validate()) {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const LocationPage()),
+                          MaterialPageRoute(
+                              builder: (context) => const LocationPage()),
                         );
-
-
                       }
                     },
                     style: ButtonStyle(

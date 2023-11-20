@@ -47,7 +47,7 @@ class _OtpPageState extends State<OtpPage> {
               child: Text(
                 "Enter the OTP sent to your mobile number ",
                 style: TextStyle(
-                  color: textgree,
+                  color: textGree,
                   fontSize: 14,
                   fontWeight: FontWeight.w400,
                 ),
@@ -89,7 +89,7 @@ class _OtpPageState extends State<OtpPage> {
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w400,
-                    color: textgree,
+                    color: textGree,
                     decoration: TextDecoration.underline,
                   ),
                 ),

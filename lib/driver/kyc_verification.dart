@@ -45,7 +45,7 @@ class _Kyc_verificationState extends State<Kyc_verification> {
               child: Text(
                 "-  Click the below icon to take a selfie",
                 style: TextStyle(
-                  color: textgree,
+                  color: textGree,
                   fontSize: 14,
 
                   // fontWeight: FontWeight.bold,
@@ -58,7 +58,7 @@ class _Kyc_verificationState extends State<Kyc_verification> {
               child: Text(
                 "-  Please make sure your photo is clear",
                 style: TextStyle(
-                  color: textgree,
+                  color: textGree,
                   fontSize: 14,
 
                   // fontWeight: FontWeight.bold,

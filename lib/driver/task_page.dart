@@ -30,7 +30,7 @@ class _Task_pageState extends State<Task_page> {
           children: <Widget>[
             Container(
               height: 30,
-              color: babypink,
+              color: babyPink,
           child: ClipRRect(
             borderRadius: BorderRadius.circular(50),
               child: Row(
@@ -68,7 +68,7 @@ class _Task_pageState extends State<Task_page> {
 
             Container(
               height: 130,
-              color: babypink,
+              color: babyPink,
 
               child: Column(
                 children: <Widget>[
@@ -172,7 +172,7 @@ class _Task_pageState extends State<Task_page> {
             SizedBox(height: 30),
             Container(
               height: 130,
-              color: babypink,
+              color: babyPink,
               child: Column(
 
                 children: <Widget>[

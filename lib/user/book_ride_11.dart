@@ -26,7 +26,7 @@ class _BookRide11State extends State<BookRide11> {
                   padding: const EdgeInsets.only(left: 20,top: 30),
                   child: Container(
                     decoration: BoxDecoration(
-                      color:textcolor, // Set the desired background color
+                      color:textColor, // Set the desired background color
                       shape: BoxShape.rectangle, // Makes the container circular
                     ),
                     child: IconButton(

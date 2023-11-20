@@ -106,7 +106,7 @@ class _Wallet_pageState extends State<Wallet_page> {
             child: ListTile(
               leading: ClipOval(
                 child: Container(
-                  color: liteblue, // Circular background color
+                  color: liteBlue, // Circular background color
                   child: IconButton(
                     icon: Icon(
                       Icons.person_rounded,
@@ -153,7 +153,7 @@ class _Wallet_pageState extends State<Wallet_page> {
                       'Today',
                       style: TextStyle(
                         fontSize: 11,
-                        color: greetext,
+                        color: greeText,
 
                       ),
 
@@ -170,14 +170,14 @@ class _Wallet_pageState extends State<Wallet_page> {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 14, right: 14, top: 5, bottom: 11),
-            child: Divider(color: blacklite),
+            child: Divider(color: blackLite),
           ),
           Padding(
             padding: const EdgeInsets.only(top: 10),
             child: ListTile(
               leading: ClipOval(
                 child: Container(
-                  color: liteblue, // Circular background color
+                  color: liteBlue, // Circular background color
                   child: IconButton(
                     icon: Icon(
                       Icons.person_rounded,
@@ -223,7 +223,7 @@ class _Wallet_pageState extends State<Wallet_page> {
                       '21/09/2022',
                       style: TextStyle(
                         fontSize: 11,
-                        color: greetext,
+                        color: greeText,
 
                       ),
 
@@ -240,7 +240,7 @@ class _Wallet_pageState extends State<Wallet_page> {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 14, right: 14, top: 5, bottom: 11),
-            child: Divider(color: blacklite),
+            child: Divider(color: blackLite),
           ),
         ],
 

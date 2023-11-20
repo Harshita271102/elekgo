@@ -41,7 +41,7 @@ class _FagPageState extends State<FagPage> {
                 style: TextStyle(
                   fontSize: 16, // Increase the font size for the question
                   // fontWeight: FontWeight.bold,
-                  color: redlite// Make the text bold
+                  color: redLite// Make the text bold
                 ),
               ),
               subtitle: Text(
@@ -72,7 +72,7 @@ class _FagPageState extends State<FagPage> {
                 style: TextStyle(
                     fontSize: 16, // Increase the font size for the question
                     // fontWeight: FontWeight.bold,
-                    color: redlite// Make the text bold
+                    color: redLite// Make the text bold
                 ),
               ),
 

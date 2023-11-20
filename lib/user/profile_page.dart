@@ -99,7 +99,7 @@ class _ProfilePageState extends State<ProfilePage> {
             decoration: InputDecoration(
               hintText: 'Harshita',
               hintStyle: TextStyle(
-                color: textgree,
+                color: textGree,
                 fontWeight: FontWeight.w600,
               ),
               border: InputBorder.none,
@@ -126,7 +126,7 @@ class _ProfilePageState extends State<ProfilePage> {
             decoration: InputDecoration(
               hintText: 'harshitamakani@gmail.com',
               hintStyle: TextStyle(
-                color: textgree,
+                color: textGree,
                 fontWeight: FontWeight.w600,
               ),
               border: InputBorder.none,
@@ -153,7 +153,7 @@ class _ProfilePageState extends State<ProfilePage> {
             decoration: InputDecoration(
               hintText: '7016806882',
               hintStyle: TextStyle(
-                color: textgree,
+                color: textGree,
                 fontWeight: FontWeight.w600,
               ),
               border: InputBorder.none,
