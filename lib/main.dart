@@ -1,5 +1,6 @@
 import 'package:elekgo/user/book_ride.dart';
 import 'package:elekgo/user/emergency_contact.dart';
+import 'package:elekgo/user/select_page.dart';
 
 import 'package:elekgo/user/set_location.dart';
 import 'package:elekgo/user/wallet.dart';
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const EmergencyContact(),
+      home: const SelectPage(),
     );
   }
 }
