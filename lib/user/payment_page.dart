@@ -552,29 +552,30 @@ class _PaymentPageState extends State<PaymentPage> {
 
 
           Expanded(
-            child: Container(
-              height: 37,
-              width: 245,
-              margin: const EdgeInsets.only(
-                  left: 90,  top: 500),
-              child: ElevatedButton(
-                onPressed: () {
-                  // Handle button press for the third container
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: black,
-                  // You should define 'background'
-                  padding: const EdgeInsets.only(top: 17, bottom: 16),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
+            child: Center(
+              child: Container(
+                height: 37,
+                width: 245,
+                margin: const EdgeInsets.only( top: 100),
+                child: ElevatedButton(
+                  onPressed: () {
+                    // Handle button press for the third container
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: black,
+                    // You should define 'background'
+                    padding: const EdgeInsets.only(top: 17, bottom: 16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                   ),
-                ),
-                child: Text(
-                  "Payment -  150",
-                  style: TextStyle(
-                    color: white,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
+                  child: Text(
+                    "Payment -  150",
+                    style: TextStyle(
+                      color: white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),

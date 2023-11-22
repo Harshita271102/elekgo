@@ -425,7 +425,9 @@ class _BookRideState extends State<BookRide> {
                       topLeft: Radius.circular(30),
                       topRight: Radius.circular(30),
                       bottomLeft: Radius.circular(30),
-                      bottomRight: Radius.circular(30))),
+                      bottomRight: Radius.circular(30),
+                  )
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -465,7 +467,10 @@ class _BookRideState extends State<BookRide> {
                   ),
                   const Spacer(),
                   IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+
+
+                      },
                       icon: const Icon(CupertinoIcons.arrow_right))
                 ],
               ),
@@ -494,17 +499,12 @@ class _BookRideState extends State<BookRide> {
 
 
           Padding(
-            padding: const EdgeInsets.only(top: 530, left: 20, right: 20),
+            padding: const EdgeInsets.only(top: 500, left: 20, right: 20),
             child: Container(
               height: 50,
               decoration: BoxDecoration(
                 color: babyPink, // Use your defined color variable
-                borderRadius: const BorderRadius.only(
-                  topLeft:  Radius.circular(30),
-                  topRight:  Radius.circular(30),
-                  bottomLeft: Radius.circular(30),
-                  bottomRight: Radius.circular(30),
-                ),
+                borderRadius: BorderRadius.circular(30),
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -520,12 +520,12 @@ class _BookRideState extends State<BookRide> {
                             color: Colors.black,
                           ),
                           onPressed: () {
-                            // Open or close the drawer manually
-                            if (_scaffoldKey.currentState!.isDrawerOpen) {
-                              _scaffoldKey.currentState!.openEndDrawer();
-                            } else {
-                              _scaffoldKey.currentState!.openDrawer();
-                            }
+                            // Navigator.push(
+                            //   context,
+                            //   MaterialPageRoute(builder: (context) => Profile_page()
+                            //   ),
+                            // );
+
                           },
                         ),
                         const Text(
@@ -586,6 +586,12 @@ class _BookRideState extends State<BookRide> {
                         IconButton(
                           onPressed: () {
                             // Your onPressed callback
+                            // Navigator.push(
+                            //   context,
+                            //   MaterialPageRoute(builder: (context) => Profile_page()
+                            //   ),
+                            // );
+
                           },
                           icon: const Icon(
                             CupertinoIcons.location_solid,

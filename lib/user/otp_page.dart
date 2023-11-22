@@ -64,7 +64,14 @@ class _OtpPageState extends State<OtpPage> {
                     buildOTPTextField(otpController2),
                     buildOTPTextField(otpController3),
                     buildOTPTextField(otpController4),
+                    // validator: (value) {
+                    //   if (value == null || value.isEmpty) {
+                    //     return 'Please enter your OTP';
+                    //   }
+                    //   return null; // Return null for no validation error
+                    // },
                   ],
+
                 ),
               ),
             ),
@@ -107,7 +114,7 @@ class _OtpPageState extends State<OtpPage> {
                       MaterialPageRoute(builder: (context) => const NameGender()),
                     );                 },
                   style: ElevatedButton.styleFrom(
-                    primary: background,
+                    backgroundColor: background,
                     padding: const EdgeInsets.only(top: 17, bottom: 16),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
@@ -156,6 +163,5 @@ class _OtpPageState extends State<OtpPage> {
 }
 
 void _launchURL() {
-  const url = 'https://www.example.com';
   // Implement your URL launching logic here
 }

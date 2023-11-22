@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../color.dart';
+import 'book_ride.dart';
 
 class LocationPage extends StatefulWidget {
   const LocationPage({Key? key}): super(key: key);
@@ -492,7 +493,11 @@ class _LocationPageState extends State<LocationPage> {
                               left: 20, right: 20, top: 25),
                           child: ElevatedButton(
                             onPressed: () {
-                              // Handle button press
+                              // Navigator.push(
+                              //   context,
+                              //   MaterialPageRoute(builder: (context) => Profile_page()
+                              //   ),
+                              // );
                             },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: white,
@@ -520,7 +525,11 @@ class _LocationPageState extends State<LocationPage> {
                               left: 20, right: 20, top: 25),
                           child: ElevatedButton(
                             onPressed: () {
-                              // Handle button press for the third container
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => const BookRide()
+                                ),
+                              );
                             },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: white,
