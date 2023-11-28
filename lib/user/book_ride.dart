@@ -477,7 +477,7 @@ class _BookRideState extends State<BookRide> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 450,right: 30),
+            padding: const EdgeInsets.only(top: 500,right: 30),
             child: Align(
               alignment: Alignment.topRight,
               child: ClipOval(
@@ -499,7 +499,7 @@ class _BookRideState extends State<BookRide> {
 
 
           Padding(
-            padding: const EdgeInsets.only(top: 500, left: 20, right: 20),
+            padding: const EdgeInsets.only(top: 550, left: 20, right: 20),
             child: Container(
               height: 50,
               decoration: BoxDecoration(
@@ -543,85 +543,107 @@ class _BookRideState extends State<BookRide> {
             ),
           ),
 
-          Align(
-            alignment: Alignment.bottomCenter,
-            child: Container(
-              height: 300,
-              width: 500,
-              decoration: BoxDecoration(
-                color: background,
-                borderRadius: const BorderRadius.only(
-                  topLeft: Radius.circular(60),
-                  topRight: Radius.circular(60),
-                ),
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding:
-                        const EdgeInsets.only(left: 35, top: 30, right: 20),
-                    child: Text(
-                      "Drop Suggestions",
-                      style: TextStyle(
-                        fontSize: 18,
-                        color: black,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(
-                        left: 35, right: 35, top: 20, bottom: 9),
-                    child: Container(
-                      height: 1, // Adjust the height to make the line thicker
-                      color: black, // Set the color you want
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 20),
-                    child: Row(
-                      children: [
-                        IconButton(
-                          onPressed: () {
-                            // Your onPressed callback
-                            // Navigator.push(
-                            //   context,
-                            //   MaterialPageRoute(builder: (context) => Profile_page()
-                            //   ),
-                            // );
 
-                          },
-                          icon: const Icon(
-                            CupertinoIcons.location_solid,
-                            color: Colors.white,
+          DraggableScrollableSheet(
+            initialChildSize: 0.3,
+            minChildSize: 0.29,
+            maxChildSize: 0.3,
+            builder: (BuildContext context, ScrollController scrollController) {
+              return Container(
+
+                decoration: const BoxDecoration(
+                  color: Colors.red,
+                  // border: Border.all(color: Colors.blue, width: 2),
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(60),
+                    topRight: Radius.circular(60),
+                  ),
+                ),
+                child: Scrollbar(
+
+                  child: ListView.builder(
+                    controller: scrollController,
+                    itemCount: 1,
+                    itemBuilder: (BuildContext context, int index) {
+                      return  Align(
+                        alignment: Alignment.bottomCenter,
+                        child: SizedBox(
+                          height: 400,
+                          width: 500,
+
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding:
+                                const EdgeInsets.only(left: 35, top: 30, right: 20),
+                                child: Text(
+                                  "Drop Suggestions",
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    color: black,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(
+                                    left: 35, right: 35, top: 20, bottom: 9),
+                                child: Container(
+                                  height: 1, // Adjust the height to make the line thicker
+                                  color: black, // Set the color you want
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 20),
+                                child: Row(
+                                  children: [
+                                    IconButton(
+                                      onPressed: () {
+                                        // Your onPressed callback
+                                        // Navigator.push(
+                                        //   context,
+                                        //   MaterialPageRoute(builder: (context) => Profile_page()
+                                        //   ),
+                                        // );
+
+                                      },
+                                      icon: const Icon(
+                                        CupertinoIcons.location_solid,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Select From Map",
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        color: black,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    // Add more widgets here if needed
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(
+                                    left: 35, right: 35, top: 20, bottom: 9),
+                                child: Container(
+                                  height: 1, // Adjust the height to make the line thicker
+                                  color: black, // Set the color you want
+                                ),
+                              ),
+                            ],
                           ),
                         ),
-                        Text(
-                          "Select From Map",
-                          style: TextStyle(
-                            fontSize: 18,
-                            color: black,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        // Add more widgets here if needed
-                      ],
-                    ),
+                      );
+                    },
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(
-                        left: 35, right: 35, top: 20, bottom: 9),
-                    child: Container(
-                      height: 1, // Adjust the height to make the line thicker
-                      color: black, // Set the color you want
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          )
+                ),
+              );
+            },
+          ),
 
           // Add other widgets for the main content of the page
         ],

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../color.dart';
 
+
 class New extends StatefulWidget {
   const New({Key? key}) : super(key: key);
 
@@ -16,94 +17,146 @@ class _NewState extends State<New> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
-      body: DraggableScrollableSheet(
+      body:DraggableScrollableSheet(
         initialChildSize: 0.2,
         minChildSize: 0.2,
-        maxChildSize: 0.8,
+        maxChildSize: 0.37,
         builder: (BuildContext context, ScrollController scrollController) {
           return Container(
-            height: 400,
-            width: 500,
-            decoration: BoxDecoration(
-              color: background,
-              borderRadius: const BorderRadius.only(
+
+            decoration: const BoxDecoration(
+              color: Colors.red,
+              // border: Border.all(color: Colors.blue, width: 2),
+              borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(60),
                 topRight: Radius.circular(60),
               ),
             ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
+            child: Scrollbar(
 
-                const Padding(
-                  padding: EdgeInsets.only(top: 20),
-                  child: Text(
-                    "Driver Name - kanu ",
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.white,
-                      // fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-                const Text(
-                  " kanu Bike No - ts-01-xy-1234 ",
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: Colors.white,
-                    // fontWeight: FontWeight.bold,
-                  ),
-                ),
-                const Text(
-                  " Driver Id - 123456 ",
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: Colors.white,
-                    // fontWeight: FontWeight.bold,
-                  ),
-                ),
-                Container(
-                  width: 360,
-                  height: 55,
-                  margin: const EdgeInsets.only(top: 50, left: 20),
-                  child: SizedBox(
-                    width: double.infinity,
-                    child: ElevatedButton(
-                      onPressed: () {
-                        // Validate the form
-                        // if (_formKey.currentState!.validate()) {
-                        //   Navigator.push(
-                        //     context,
-                        //     MaterialPageRoute(builder: (context) => const LocationPage()),
-                        //   );
-                        //
-                        //
-                        // }
-                      },
-                      style: ButtonStyle(
-                        backgroundColor:
-                        MaterialStateProperty.all<Color>(white),
-                        padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
-                          const EdgeInsets.only(top: 17, bottom: 16),
-                        ),
-                        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                          RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
+              child: ListView.builder(
+                controller: scrollController,
+                itemCount: 1,
+                itemBuilder: (BuildContext context, int index) {
+                  return  Align(
+                    alignment: Alignment.bottomCenter,
+                    child: SizedBox(
+                      height: 400,
+                      width: 500,
+
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Text(
+                            "Welcome to your dashboard",
+                            style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
-                        ),
-                      ),
-                      child: Text(
-                        "Live Location Shared ",
-                        style: TextStyle(
-                          color: black,
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                        ),
+                          const Padding(
+                            padding: EdgeInsets.only(top: 20),
+                            child: Text(
+                              "Yayy! We have found the nearest Elekgo  ",
+                              style: TextStyle(
+                                fontSize: 12,
+                                color: Colors.white,
+                                // fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                          const Text(
+                            " for you. Select your exclusive Elekgo and ",
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: Colors.white,
+                              // fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          const Text(
+                            " enjoy a great ride. Enjoy!",
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: Colors.white,
+                              // fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Row(
+                            children: [
+                              Expanded(
+                                child: Container(
+                                  height: 55,
+                                  width: 133,
+                                  margin: const EdgeInsets.only(
+                                      left: 20, right: 20, top: 25),
+                                  child: ElevatedButton(
+                                    onPressed: () {
+                                      // Navigator.push(
+                                      //   context,
+                                      //   MaterialPageRoute(builder: (context) => Profile_page()
+                                      //   ),
+                                      // );
+                                    },
+                                    style: ElevatedButton.styleFrom(
+                                      backgroundColor: white,
+                                      padding: const EdgeInsets.only(top: 17, bottom: 16),
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(10),
+                                      ),
+                                    ),
+                                    child: Text(
+                                      "No,Thanks",
+                                      style: TextStyle(
+                                        color: background,
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                child: Container(
+                                  height: 55,
+                                  width: 133,
+                                  margin: const EdgeInsets.only(
+                                      left: 20, right: 20, top: 25),
+                                  child: ElevatedButton(
+                                    onPressed: () {
+                                      // Navigator.push(
+                                      //   context,
+                                      //   MaterialPageRoute(builder: (context) => const BookRide()
+                                      //   ),
+                                      // );
+                                    },
+                                    style: ElevatedButton.styleFrom(
+                                      backgroundColor: white,
+                                      // You should define 'background'
+                                      padding: const EdgeInsets.only(top: 17, bottom: 16),
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(10),
+                                      ),
+                                    ),
+                                    child: Text(
+                                      "Yes",
+                                      style: TextStyle(
+                                        color: black,
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
                       ),
                     ),
-                  ),
-                ),
-              ],
+                  );
+                },
+              ),
             ),
           );
         },
