@@ -3,6 +3,7 @@ import 'package:elekgo/user/book_ride_10.dart';
 import 'package:elekgo/user/book_ride_11.dart';
 import 'package:elekgo/user/book_ride_12.dart';
 import 'package:elekgo/user/book_ride_9.dart';
+import 'package:elekgo/user/cashPage.dart';
 import 'package:elekgo/user/emergency_contact.dart';
 import 'package:elekgo/user/fag_page.dart';
 import 'package:elekgo/user/location_page.dart';
