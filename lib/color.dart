@@ -14,12 +14,15 @@ class HexColor extends Color {
 }
 
 Color background = HexColor("B80005");
-Color grey = HexColor("A9A9AA");
+
 Color black = HexColor("000001");
 Color  textColor = HexColor("#F7B306");
 Color  textGree = HexColor("#A9A9AA");
 Color  gree = HexColor("#ABABAB");
 Color  liteGree = HexColor("#9E9E9E");
+Color  litegrey = HexColor("#EFF0F0");
+
+Color  blue = HexColor("#4252FF");
 
 Color  white = HexColor("#FFFFFF");
 Color  green = HexColor("#83A370");
@@ -35,6 +38,9 @@ Color  orange = HexColor("#FF2020");
 Color  blackLite = HexColor("#2A2A2A");
 Color  greeLite = HexColor("#D9D9D9");
 Color  pink = HexColor("#FF8588");
+
+
+
 // Color  green = HexColor("#42A03D");
 
 

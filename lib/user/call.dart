@@ -1,22 +1,15 @@
-import 'package:elekgo/color.dart';
-
-// import 'package:elekgo/user/profile_page.dart';
-// import 'package:elekgo/user/referral_code.dart';
-// import 'package:elekgo/user/set_location.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-// import 'emergency_contact.dart';
-// import 'fag_page.dart';
+import '../color.dart';
 
-class BookRide extends StatefulWidget {
-  const BookRide({Key? key}) : super(key: key);
+class Call extends StatefulWidget {
+  const Call({super.key});
 
   @override
-  State<BookRide> createState() => _BookRideState();
+  State<Call> createState() => _CallState();
 }
 
-class _BookRideState extends State<BookRide> {
+class _CallState extends State<Call> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
@@ -61,7 +54,7 @@ class _BookRideState extends State<BookRide> {
                                   icon: Icon(
                                     Icons.person_rounded,
                                     color:
-                                        background, // Set the desired icon color
+                                    background, // Set the desired icon color
                                   ),
                                   onPressed: () {
                                     // Handle menu button press
@@ -413,82 +406,24 @@ class _BookRideState extends State<BookRide> {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(20),
-            child: Container(
-              height: 50,
-              // padding: EdgeInsets.all(10),
-
-              decoration: const BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(30),
-                      topRight: Radius.circular(30),
-                      bottomLeft: Radius.circular(30),
-                      bottomRight: Radius.circular(30),
-                  )
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Align(
-                    alignment: Alignment.topLeft,
-                    child:
-                        // Padding(
-                        //   padding: const EdgeInsets.only(top: 40, left: 30),
-                        //   child:
-                        ClipOval(
-                      child: Container(
-                        color: Colors.white,
-                        // padding: EdgeInsets.all(8.0), // Adjust the padding as needed
-                        child: IconButton(
-                          icon: const Icon(
-                            Icons.menu,
-                            color: Colors.black, // Set the desired icon color
-                          ),
-                          onPressed: () {
-                            // Open or close the drawer manually
-                            if (_scaffoldKey.currentState!.isDrawerOpen) {
-                              _scaffoldKey.currentState!.openEndDrawer();
-                            } else {
-                              _scaffoldKey.currentState!.openDrawer();
-                            }
-                          },
-                          // ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Column(
-                    children: [
-                      Text("Pick up location"),
-                      Text("Current Location")
-                    ],
-                  ),
-                  const Spacer(),
-                  IconButton(
-                      onPressed: () {
-
-
-                      },
-                      icon: const Icon(CupertinoIcons.arrow_right))
-                ],
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: 500,right: 30),
-            child: Align(
-              alignment: Alignment.topRight,
+          Align(
+            alignment: Alignment.topLeft,
+            child: Padding(
+              padding: const EdgeInsets.only(top: 40, left: 30),
               child: ClipOval(
-                child: Container(
-                  color: background,
+                child: Material(
+                  color: Colors.black,
                   child: IconButton(
                     icon: const Icon(
-                      Icons.arrow_forward_ios,
-                      color: Colors.black,
+                      Icons.arrow_back_ios,
+                      color: Colors.white, // Set the desired icon color
                     ),
                     onPressed: () {
+                      if (_scaffoldKey.currentState!.isDrawerOpen) {
+                        _scaffoldKey.currentState!.openEndDrawer();
+                      } else {
+                        _scaffoldKey.currentState!.openDrawer();
+                      }
                       // Handle menu button press
                     },
                   ),
@@ -496,158 +431,108 @@ class _BookRideState extends State<BookRide> {
               ),
             ),
           ),
+          Align(
 
-
-          Padding(
-            padding: const EdgeInsets.only(top: 550, left: 20, right: 20),
+            alignment: Alignment.bottomCenter,
             child: Container(
-              height: 50,
+
+              height: MediaQuery.of(context).size.height * 0.40 ,
+              width: MediaQuery.of(context).size.width,
+
+              // height: 400,
+              // width: 500,
               decoration: BoxDecoration(
-                color: babyPink, // Use your defined color variable
-                borderRadius: BorderRadius.circular(30),
+                color: background,
+                borderRadius: const BorderRadius.only(
+                  topLeft: Radius.circular(60),
+                  topRight: Radius.circular(60),
+                ),
               ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              child: Column(
                 children: [
-                  Align(
-                    alignment: Alignment.topLeft,
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-
-
-                        IconButton(
-                          icon: const Icon(
-                            Icons.arrow_forward_ios,
-                            color: Colors.black,
-                          ),
-                          onPressed: () {
-                            // Navigator.push(
-                            //   context,
-                            //   MaterialPageRoute(builder: (context) => Profile_page()
-                            //   ),
-                            // );
-
-                          },
-                        ),
-                        const Text(
-                          "Where to?",
-
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
+                  Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(top: 35),
+                        child: Center(
+                          child: Image.asset(
+                            'assets/images/map.png',
+                            fit: BoxFit.cover,
                           ),
                         ),
-                      ],
+                      ),
+
+                    ],
+                  ),
+                  Padding(
+
+                    padding: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.03),
+
+                    child: Text(
+                      "Emergency Call ",
+                      style: TextStyle(
+                        color: black,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+
+                  Center(
+                    child: Padding(
+                      padding:  EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.04,bottom: 10),
+
+                      child: Container(
+                        width: MediaQuery.of(context).size.width * 0.85,
+                        // width: 300,
+                        height: 50,
+
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(12), // Set the border radius
+                        ),
+                        child: SizedBox(
+                          width: double.infinity,
+                          child: ElevatedButton(
+                            onPressed: () {
+                              // Validate the form
+                              // if (_formKey.currentState!.validate()) {
+                              //   Navigator.push(
+                              //     context,
+                              //     MaterialPageRoute(builder: (context) => const LocationPage()),
+                              //   );
+                              //
+                              //
+                              // }
+                            },
+                            style: ButtonStyle(
+                              backgroundColor:
+                              MaterialStateProperty.all<Color>(white),
+                              padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
+                                const EdgeInsets.only( top: 17, bottom: 16),
+                              ),
+                              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                RoundedRectangleBorder(borderRadius:BorderRadius.circular(10),
+                                ),
+                              ),
+                            ),
+                            child: Text(
+                              "Calling ",
+                              style: TextStyle(
+                                color: black,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                 ],
               ),
             ),
           ),
-
-
-          DraggableScrollableSheet(
-            initialChildSize: 0.3,
-            minChildSize: 0.29,
-            maxChildSize: 0.3,
-            builder: (BuildContext context, ScrollController scrollController) {
-              return Container(
-
-                decoration: const BoxDecoration(
-                  color: Colors.red,
-                  // border: Border.all(color: Colors.blue, width: 2),
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(60),
-                    topRight: Radius.circular(60),
-                  ),
-                ),
-                child: Scrollbar(
-
-                  child: ListView.builder(
-                    controller: scrollController,
-                    itemCount: 1,
-                    itemBuilder: (BuildContext context, int index) {
-                      return  Align(
-                        alignment: Alignment.bottomCenter,
-                        child: SizedBox(
-                          height: 400,
-                          width: 500,
-
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Padding(
-                                padding:
-                                const EdgeInsets.only(left: 35, top: 30, right: 20),
-                                child: Text(
-                                  "Drop Suggestions",
-                                  style: TextStyle(
-                                    fontSize: 18,
-                                    color: black,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(
-                                    left: 35, right: 35, top: 20, bottom: 9),
-                                child: Container(
-                                  height: 1, // Adjust the height to make the line thicker
-                                  color: black, // Set the color you want
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(left: 20),
-                                child: Row(
-                                  children: [
-                                    IconButton(
-                                      onPressed: () {
-                                        // Your onPressed callback
-                                        // Navigator.push(
-                                        //   context,
-                                        //   MaterialPageRoute(builder: (context) => Profile_page()
-                                        //   ),
-                                        // );
-
-                                      },
-                                      icon: const Icon(
-                                        CupertinoIcons.location_solid,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                    Text(
-                                      "Select From Map",
-                                      style: TextStyle(
-                                        fontSize: 18,
-                                        color: black,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    ),
-                                    // Add more widgets here if needed
-                                  ],
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(
-                                    left: 35, right: 35, top: 20, bottom: 9),
-                                child: Container(
-                                  height: 1, // Adjust the height to make the line thicker
-                                  color: black, // Set the color you want
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      );
-                    },
-                  ),
-                ),
-              );
-            },
-          ),
-
           // Add other widgets for the main content of the page
         ],
       ),
