@@ -2,6 +2,9 @@ import 'package:elekgo/color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'book_ride.dart';
+import 'call.dart';
+
 class EmergencyContact extends StatefulWidget {
   const EmergencyContact({Key? key}) : super(key: key);
 
@@ -18,6 +21,36 @@ class _EmergencyContactState extends State<EmergencyContact> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
+          Container(
+            margin: const EdgeInsets.only(top: 25),
+            padding: const EdgeInsets.only(left: 20, right: 20, bottom: 30),
+
+
+
+            child: Row(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    color: background,
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: IconButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => BookRide()
+                        ),
+                      );
+                      // Handle back button press
+                    },
+                    icon: const Icon(Icons.arrow_back),
+                    color: white,
+                    highlightColor: Colors.transparent,
+                  ),
+                ),
+              ],
+            ),
+          ),
           const Padding(
             padding: EdgeInsets.only(top: 82.0),
             child: Center(
@@ -90,6 +123,11 @@ class _EmergencyContactState extends State<EmergencyContact> {
                     padding: const EdgeInsets.only(right: 25),
                     child: InkWell(
                       onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Call()
+                          ),
+                        );
                         // Handle the tap event
                       },
                       child: const CircleAvatar(

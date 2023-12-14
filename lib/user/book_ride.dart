@@ -1,10 +1,16 @@
 import 'package:elekgo/color.dart';
+import 'package:elekgo/user/profile_page.dart';
+import 'package:elekgo/user/referral_code.dart';
 
 // import 'package:elekgo/user/profile_page.dart';
 // import 'package:elekgo/user/referral_code.dart';
 // import 'package:elekgo/user/set_location.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import 'emergency_contact.dart';
+import 'fag_page.dart';
+import 'historyPage.dart';
 
 // import 'emergency_contact.dart';
 // import 'fag_page.dart';
@@ -108,11 +114,11 @@ class _BookRideState extends State<BookRide> {
                             ),
                             child: IconButton(
                               onPressed: () {
-                                // Navigator.push(
-                                //   context,
-                                //   MaterialPageRoute(builder: (context) => Profile_page()
-                                //   ),
-                                // );
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => ProfilePage()
+                                  ),
+                                );
                               },
                               icon: Icon(
                                 Icons.edit,
@@ -157,10 +163,10 @@ class _BookRideState extends State<BookRide> {
                   color: gree,
                   icon: const Icon(Icons.arrow_forward_ios),
                   onPressed: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(builder: (context) => Set_location()),
-                    // );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => HistoryPage()),
+                    );
                     // Handle search button press
                   },
                 ),
@@ -194,10 +200,10 @@ class _BookRideState extends State<BookRide> {
                   color: gree,
                   icon: const Icon(Icons.arrow_forward_ios),
                   onPressed: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(builder: (context) => Referral_code()),
-                    // );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ReferralCode()),
+                    );
                     // Handle search button press
                   },
                 ),
@@ -273,10 +279,10 @@ class _BookRideState extends State<BookRide> {
                   color: gree,
                   icon: const Icon(Icons.arrow_forward_ios),
                   onPressed: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(builder: (context) => Emergency_contact()),
-                    // );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => EmergencyContact()),
+                    );
                     // Handle search button press
                   },
                 ),
@@ -308,10 +314,10 @@ class _BookRideState extends State<BookRide> {
                   color: gree,
                   icon: const Icon(Icons.arrow_forward_ios),
                   onPressed: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(builder: (context) => Fag_page()),
-                    // );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => FagPage()),
+                    );
                     // Handle search button press
                   },
                 ),
@@ -468,8 +474,10 @@ class _BookRideState extends State<BookRide> {
                   const Spacer(),
                   IconButton(
                       onPressed: () {
-
-
+                        // Navigator.push(
+                        //   context,
+                        //   MaterialPageRoute(builder: (context) => const BookRide9()),
+                        // );
                       },
                       icon: const Icon(CupertinoIcons.arrow_right))
                 ],

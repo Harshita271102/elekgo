@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../color.dart';
+import 'cashPage.dart';
 
 class SelectPage extends StatefulWidget {
   const SelectPage({super.key});
@@ -1160,15 +1161,14 @@ class _SelectPageState extends State<SelectPage> with SingleTickerProviderStateM
                       width: double.infinity,
                       child: ElevatedButton(
                         onPressed: () {
-                          // Validate the form
-                          // if (_formKey.currentState!.validate()) {
-                          //   Navigator.push(
-                          //     context,
-                          //     MaterialPageRoute(builder: (context) => const LocationPage()),
-                          //   );
-                          //
-                          //
-                          // }
+
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => const CashPage()),
+                            );
+
+
+
                         },
                         style: ButtonStyle(
                           backgroundColor:

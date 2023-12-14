@@ -1,4 +1,6 @@
+import 'package:elekgo/driver/select_language.dart';
 import 'package:elekgo/user/book_ride_9.dart';
+import 'package:elekgo/user/select_page.dart';
 // import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -83,7 +85,7 @@ class _SetLocationState extends State<SetLocation> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const BookRide9()),
+                      MaterialPageRoute(builder: (context) => const SelectPage()),
                     );
                     },
                 ),

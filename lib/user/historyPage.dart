@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../color.dart'; // Import your color file
+import '../color.dart';
+import 'book_ride.dart'; // Import your color file
 
 class HistoryPage extends StatelessWidget {
   const HistoryPage({Key? key}) : super(key: key);
@@ -13,6 +14,9 @@ class HistoryPage extends StatelessWidget {
           Container(
             margin: const EdgeInsets.only(top: 25),
             padding: const EdgeInsets.only(left: 20, right: 20, bottom: 30),
+
+
+
             child: Row(
               children: [
                 Container(
@@ -22,6 +26,11 @@ class HistoryPage extends StatelessWidget {
                   ),
                   child: IconButton(
                     onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => BookRide()
+                        ),
+                      );
                       // Handle back button press
                     },
                     icon: const Icon(Icons.arrow_back),

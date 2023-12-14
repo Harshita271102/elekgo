@@ -1,5 +1,6 @@
 // ignore_for_file: file_names
 
+import 'package:elekgo/user/payment_page.dart';
 import 'package:flutter/material.dart';
 
 import '../color.dart';
@@ -149,10 +150,10 @@ class _OnTheWayState extends State<OnTheWay> {
                             onPressed: () {
                               // Validate the form
                               // if (_formKey.currentState!.validate()) {
-                              //   Navigator.push(
-                              //     context,
-                              //     MaterialPageRoute(builder: (context) => const LocationPage()),
-                              //   );
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const PaymentPage()),
+                                );
                               //
                               //
                               // }
@@ -221,11 +222,10 @@ class _OnTheWayState extends State<OnTheWay> {
                       ),
                     ),
                   ),
-
                   Container(
-                    height: MediaQuery.of(context).size.height * 0.05,
+                    height: MediaQuery.of(context).size.height * 0.05 ,
                     width: MediaQuery.of(context).size.width * 0.28,
-                    margin: const EdgeInsets.only(top: 190, left: 20),
+                    margin: const EdgeInsets.only(top: 190,right: 20),
                     child: ElevatedButton(
                       onPressed: () {
                         // Handle button press for the third container
@@ -237,42 +237,18 @@ class _OnTheWayState extends State<OnTheWay> {
                           borderRadius: BorderRadius.circular(25),
                         ),
                       ),
-                      child: const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center, // Align children in the center
-                          children: [
-
-                            Icon(
-                              Icons.watch_later,
-                              color: Colors.white, // Set the desired icon color
-                            ),
-
-                            Padding(
-                              padding: EdgeInsets.only(left: 10),
-                              // child: const Text(
-                              //   "Pin - 1234",
-                              //   style: TextStyle(
-                              //     color: Colors.white,
-                              //     fontSize: 15,
-                              //     fontWeight: FontWeight.bold,
-                              //   ),
-                              // ),
-                              child: Text(
-                                "05:22",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
-                           ],
-                         ),
-
+                      child: const Text(
+                        "05:22",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ),
+                  ),
+
+
 
                   ],
                 ),

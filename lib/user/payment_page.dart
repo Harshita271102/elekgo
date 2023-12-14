@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 
 import '../color.dart';
+import 'emergency_contact.dart';
 // import 'emergency_contact.dart';
 
 class PaymentPage extends StatefulWidget {
@@ -493,7 +494,7 @@ class _PaymentPageState extends State<PaymentPage> {
                           // if (_formKey.currentState!.validate()) {
                           //   Navigator.push(
                           //     context,
-                          //     MaterialPageRoute(builder: (context) => const LocationPage()),
+                          //     MaterialPageRoute(builder: (context) => const EmergencyContact()),
                           //   );
                           //
                           //
@@ -534,6 +535,10 @@ class _PaymentPageState extends State<PaymentPage> {
             padding: const EdgeInsets.only(top: 450,left: 20),
             child: ElevatedButton(
               onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const EmergencyContact()),
+                );
                 // Add your onPressed logic here
               },
               style: ButtonStyle(

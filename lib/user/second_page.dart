@@ -21,7 +21,7 @@ class _SecondPageState extends State<SecondPage> {
   }
 
   void _navigateToHomePage() async {
-    await Future.delayed(const Duration(milliseconds: 7000));
+    await Future.delayed(const Duration(milliseconds: 4000));
 
     // Navigate to the next page here
     Navigator.pushReplacement(

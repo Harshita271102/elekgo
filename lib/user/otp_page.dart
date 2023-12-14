@@ -142,6 +142,7 @@ class _OtpPageState extends State<OtpPage> {
       width: 50,
       child: TextFormField(
         controller: controller,
+        autofocus: true,
         textAlign: TextAlign.center,
         decoration: InputDecoration(
           border: OutlineInputBorder(

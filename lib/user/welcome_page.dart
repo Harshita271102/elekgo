@@ -56,7 +56,7 @@ class _WelcomePageState extends State<WelcomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Welcome to Rixawala",
+              "Welcome to Elekgo",
               style: TextStyle(
                 color: background,
                 fontSize: 20,
@@ -83,6 +83,7 @@ class _WelcomePageState extends State<WelcomePage> {
               ),
               keyboardType: TextInputType.number,
               inputFormatters: [LengthLimitingTextInputFormatter(10)],
+              autovalidateMode: AutovalidateMode.onUserInteraction, // Enable on user interaction
               validator: (value) {
                 if (value == null || value.isEmpty) {
                   return 'Please enter a mobile number';
@@ -92,6 +93,7 @@ class _WelcomePageState extends State<WelcomePage> {
                 return null; // Return null for no validation error
               },
             ),
+
             const SizedBox(height: 10),
             TextFormField(
               controller: emailController,
@@ -101,23 +103,23 @@ class _WelcomePageState extends State<WelcomePage> {
                 border: OutlineInputBorder(),
               ),
               keyboardType: TextInputType.emailAddress,
-              validator: (value) {
-                if (value == null || value.isEmpty) {
-                  return 'Please enter an email address';
-                }
-                if (!RegExp(
-                    r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$")
-                    .hasMatch(value)) {
-                  return 'Invalid email format';
-                }
-                return null; // Return null for no validation error
-              },
+              // validator: (value) {
+              //   if (value == null || value.isEmpty) {
+              //     return 'Please enter an email address';
+              //   }
+              //   if (!RegExp(
+              //       r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$")
+              //       .hasMatch(value)) {
+              //     return 'Invalid email format';
+              //   }
+              //   return null; // Return null for no validation error
+              // },
             ),
             SizedBox(
               width: double.infinity,
               child: Container(
                 margin: const EdgeInsets.only(top: 70),
-                color: Colors.blue,
+
                 child: ElevatedButton(
                   onPressed: () {
                     if (_formKey.currentState!.validate()) {

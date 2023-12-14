@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../color.dart';
+import 'onTheWay.dart';
 
 class WatingPage extends StatefulWidget {
   const WatingPage({super.key});
@@ -33,32 +34,6 @@ class _WatingPageState extends State<WatingPage> {
           ),
           //Add your other widgets or animations here
 
-          Align(
-            alignment: Alignment.topLeft,
-            child: Padding(
-              padding: const EdgeInsets.only(top: 40, left: 30),
-              child: ClipOval(
-                child: Container(
-                  color: Colors.white,
-                  padding: const EdgeInsets.all(8.0), // Adjust the padding as needed
-                  child: IconButton(
-                    icon: const Icon(
-                      Icons.menu,
-                      color: Colors.black, // Set the desired icon color
-                    ),
-                    onPressed: () {
-                      // Open or close the drawer manually
-                      if (_scaffoldKey.currentState!.isDrawerOpen) {
-                        _scaffoldKey.currentState!.openEndDrawer();
-                      } else {
-                        _scaffoldKey.currentState!.openDrawer();
-                      }
-                    },
-                  ),
-                ),
-              ),
-            ),
-          ),
 
           Align(
 
@@ -69,7 +44,7 @@ class _WatingPageState extends State<WatingPage> {
               width: MediaQuery.of(context).size.width,
 
               // height: 400,
-              // width: 500,
+              // width: 50
               decoration: BoxDecoration(
                 color: background,
                 borderRadius: const BorderRadius.only(
@@ -175,10 +150,10 @@ class _WatingPageState extends State<WatingPage> {
                             onPressed: () {
                               // Validate the form
                               // if (_formKey.currentState!.validate()) {
-                              //   Navigator.push(
-                              //     context,
-                              //     MaterialPageRoute(builder: (context) => const LocationPage()),
-                              //   );
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const OnTheWay()),
+                                );
                               //
                               //
                               // }
